@@ -93,8 +93,180 @@ const eliminatedTeams = [
 ];
 
 const fixtures = [
+
   {
-    date: "2 Jul 2026 - 8:00 PM",
+    id: "R32-3",
+    date: "28 Jun 2026 - 8:00 PM",
+    home: {
+      name: "South Africa",
+      code: "za",
+      owner: "Darshan"
+    },
+    away: {
+      name: "Canada",
+      code: "ca",
+      owner: "Heja"
+    },
+    result: "0-1",
+    winner: "Canada"
+  },
+
+  {
+    id: "R32-9",
+    date: "29 Jun 2026 - 6:00 PM",
+    home: {
+      name: "Brazil",
+      code: "br",
+      owner: "Karl"
+    },
+    away: {
+      name: "Japan",
+      code: "jp",
+      owner: "Heja"
+    },
+    result: "2-1",
+    winner: "Brazil"
+  },
+
+  {
+    id: "R32-1",
+    date: "29 Jun 2026 - 9:30 PM",
+    home: {
+      name: "Germany",
+      code: "de",
+      owner: "Heja"
+    },
+    away: {
+      name: "Paraguay",
+      code: "py",
+      owner: "Karl"
+    },
+    result: "1-1 (Paraguay pens)",
+    winner: "Paraguay"
+  },
+
+  {
+    id: "R32-4",
+    date: "30 Jun 2026 - 2:00 AM",
+    home: {
+      name: "Netherlands",
+      code: "nl",
+      owner: "Betim"
+    },
+    away: {
+      name: "Morocco",
+      code: "ma",
+      owner: "Darshan"
+    },
+    result: "1-1 (Morocco pens)",
+    winner: "Morocco"
+  },
+
+  {
+    id: "R32-10",
+    date: "30 Jun 2026 - 6:00 PM",
+    home: {
+      name: "Ivory Coast",
+      code: "ci",
+      owner: "Betim"
+    },
+    away: {
+      name: "Norway",
+      code: "no",
+      owner: "Darshan"
+    },
+    result: "1-2",
+    winner: "Norway"
+  },
+
+  {
+    id: "R32-2",
+    date: "30 Jun 2026 - 10:00 PM",
+    home: {
+      name: "France",
+      code: "fr",
+      owner: "Karl"
+    },
+    away: {
+      name: "Sweden",
+      code: "se",
+      owner: "Betim"
+    },
+    result: "3-0",
+    winner: "France"
+  },
+
+  {
+    id: "R32-11",
+    date: "01 Jul 2026 - 2:00 AM",
+    home: {
+      name: "Mexico",
+      code: "mx",
+      owner: "Heja"
+    },
+    away: {
+      name: "Ecuador",
+      code: "ec",
+      owner: "Darshan"
+    },
+    result: "2-0",
+    winner: "Mexico"
+  },
+
+  {
+    id: "R32-12",
+    date: "01 Jul 2026 - 5:00 PM",
+    home: {
+      name: "England",
+      code: "eng",
+      owner: "Krishan"
+    },
+    away: {
+      name: "DR Congo",
+      code: "cd",
+      owner: "Heja"
+    },
+    result: "2-1",
+      winner: "England"
+  },
+
+  {
+    id: "R32-8",
+    date: "01 Jul 2026 - 9:00 PM",
+    home: {
+      name: "Belgium",
+      code: "be",
+      owner: "Darshan"
+    },
+    away: {
+      name: "Senegal",
+      code: "sn",
+      owner: "Karl"
+    },
+    result: "3-2",
+    winner: "Belgium"
+  },
+
+  {
+    id: "R32-7",
+    date: "02 Jul 2026 - 2:00 AM",
+    home: {
+      name: "USA",
+      code: "us",
+      owner: "Krishan"
+    },
+    away: {
+      name: "Bosnia",
+      code: "ba",
+      owner: "Betim"
+    },
+    result: "2-0",
+    winner: "USA"
+  },
+
+  {
+    id: "R32-6",
+    date: "02 Jul 2026 - 8:00 PM",
     home: {
       name: "Spain",
       code: "es",
@@ -105,8 +277,10 @@ const fixtures = [
       code: "at",
       owner: "Karl"
     },
-    result: ""
+    result: "",
+    winner: ""
   }
+
 ];
 
 function getFlag(team) {
