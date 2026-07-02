@@ -1,0 +1,74 @@
+body {
+    max-width: none !important;
+    overflow-x: auto;
+}
+
+.bracket {
+    min-width: 2800px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns:
+        260px
+        200px
+        200px
+        200px
+        260px
+        200px
+        200px
+        200px
+        260px;
+
+    gap: 25px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+}
+
+.round h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.match {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.flag {
+    width: 28px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.r16-top { margin-top: 80px; }
+.r16-bottom { margin-top: 260px; }
+
+.qf-top { margin-top: 210px; }
+.qf-bottom { margin-top: 540px; }
+
+.sf { margin-top: 420px; }
+
+.final {
+    margin-top: 420px;
+}
+
+.champion {
+    margin-top: 40px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
