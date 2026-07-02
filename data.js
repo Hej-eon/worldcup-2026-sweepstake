@@ -456,11 +456,18 @@ const bracketData = {
 };
 
 function getWinner(matchId) {
+
   const match = fixtures.find(f => f.id === matchId);
 
-  if (!match) return "?";
+  if (!match || !match.winner) {
+    return null;
+  }
 
-  return match.winner || "?";
+  if (match.home.name === match.winner) {
+    return match.home;
+  }
+
+  return match.away;
 }
 
 const roundOf16 = [
