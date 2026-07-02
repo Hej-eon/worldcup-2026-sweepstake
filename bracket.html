@@ -276,41 +276,45 @@ h1{
 
 roundOf16.forEach((match, index) => {
 
-    const slot =
-        document.getElementById(`r16-${index + 1}`);
+    const slot = document.getElementById(`r16-${index + 1}`);
 
-    if(slot){
+    if (!slot) return;
 
-slot.innerHTML = `
+    let html = "";
 
-<div class="team">
-    ${
-      match.home
-      ? `<img src="${getFlag(match.home)}">
-         ${match.home.name}`
-      : "?"
+    if (match.home) {
+        html += `
+            <div class="team">
+                ${getFlag(match.home)}
+                ${match.home.name}
+            </div>
+            <div class="owner">
+                ${match.home.owner}
+            </div>
+        `;
+    } else {
+        html += `
+            <div class="team">?</div>
+        `;
     }
-</div>
 
-<div class="owner">
-    ${match.home ? match.home.owner : ""}
-</div>
-
-<div class="team">
-    ${
-      match.away
-      ? `<img src="${getFlag(match.away)}">
-         ${match.away.name}`
-      : "?"
+    if (match.away) {
+        html += `
+            <div class="team">
+                ${getFlag(match.away)}
+                ${match.away.name}
+            </div>
+            <div class="owner">
+                ${match.away.owner}
+            </div>
+        `;
+    } else {
+        html += `
+            <div class="team">?</div>
+        `;
     }
-</div>
 
-<div class="owner">
-    ${match.away ? match.away.owner : ""}
-</div>
-
-`;
-    }
+    slot.innerHTML = html;
 
 });
 
