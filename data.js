@@ -109,11 +109,6 @@ const fixtures = [
   }
 ];
 
-const standingsBody = document.querySelector("#standings tbody");
-const teamsContainer = document.getElementById("teams");
-const eliminatedList = document.getElementById("eliminated");
-const fixturesBody = document.querySelector("#fixtures tbody");
-
 function getFlag(team) {
   if (team.code === "eng") {
     return "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg";
@@ -126,70 +121,81 @@ function getFlag(team) {
   return `https://flagcdn.com/w40/${team.code}.png`;
 }
 
-Object.entries(sweepstake)
-  .map(([player, teams]) => {
-    const remaining = teams.filter(
-      team => !eliminatedTeams.includes(team.name)
-    ).length;
+const standingsBody = document.querySelector("#standings tbody");
+const teamsContainer = document.getElementById("teams");
+const eliminatedList = document.getElementById("eliminated");
 
-    return { player, teams, remaining };
-  })
-  .sort((a, b) => b.remaining - a.remaining)
-  .forEach(item => {
+if (standingsBody && teamsContainer && eliminatedList) {
 
-    standingsBody.innerHTML += `
-      <tr>
-        <td>${item.player}</td>
-        <td>${item.remaining}</td>
-      </tr>
-    `;
+  Object.entries(sweepstake)
+    .map(([player, teams]) => {
+      const remaining = teams.filter(
+        team => !eliminatedTeams.includes(team.name)
+      ).length;
 
-    let teamsHtml = "";
+      return { player, teams, remaining };
+    })
+    .sort((a, b) => b.remaining - a.remaining)
+    .forEach(item => {
 
-    item.teams.forEach(team => {
+      standingsBody.innerHTML += `
+        <tr>
+          <td>${item.player}</td>
+          <td>${item.remaining}</td>
+        </tr>
+      `;
 
-      const eliminated = eliminatedTeams.includes(team.name);
+      let teamsHtml = "";
 
-      teamsHtml += `
-        <div class="team ${eliminated ? "eliminated" : ""}">
-          <img class="flag" src="${getFlag(team)}" alt="${team.name}">
-          ${team.name}
+      item.teams.forEach(team => {
+
+        const eliminated = eliminatedTeams.includes(team.name);
+
+        teamsHtml += `
+          <div class="team ${eliminated ? "eliminated" : ""}">
+            <img class="flag" src="${getFlag(team)}" alt="${team.name}">
+            ${team.name}
+          </div>
+        `;
+      });
+
+      teamsContainer.innerHTML += `
+        <div class="player-card">
+          <h3>${item.player} (${item.remaining})</h3>
+          ${teamsHtml}
         </div>
       `;
     });
 
-    teamsContainer.innerHTML += `
-      <div class="player-card">
-        <h3>${item.player} (${item.remaining})</h3>
-        ${teamsHtml}
-      </div>
+  eliminatedTeams.forEach(team => {
+    eliminatedList.innerHTML += `<li>${team}</li>`;
+  });
+}
+
+const fixturesBody = document.querySelector("#fixtures tbody");
+
+if (fixturesBody) {
+  fixtures.forEach(fixture => {
+    fixturesBody.innerHTML += `
+      <tr>
+        <td>${fixture.date}</td>
+
+        <td>
+          <img class="flag"
+               src="${getFlag(fixture.home)}"
+               alt="${fixture.home.name}">
+          ${fixture.home.name} (${fixture.home.owner})
+
+          vs
+
+          <img class="flag"
+               src="${getFlag(fixture.away)}"
+               alt="${fixture.away.name}">
+          ${fixture.away.name} (${fixture.away.owner})
+        </td>
+
+        <td>${fixture.result}</td>
+      </tr>
     `;
   });
-
-eliminatedTeams.forEach(team => {
-  eliminatedList.innerHTML += `<li>${team}</li>`;
-});
-
-fixtures.forEach(fixture => {
-  fixturesBody.innerHTML += `
-    <tr>
-      <td>${fixture.date}</td>
-
-      <td>
-        <img class="flag"
-             src="${getFlag(fixture.home)}"
-             alt="${fixture.home.name}">
-        ${fixture.home.name} (${fixture.home.owner})
-
-        vs
-
-        <img class="flag"
-             src="${getFlag(fixture.away)}"
-             alt="${fixture.away.name}">
-        ${fixture.away.name} (${fixture.away.owner})
-      </td>
-
-      <td>${fixture.result}</td>
-    </tr>
-  `;
-});
+}
