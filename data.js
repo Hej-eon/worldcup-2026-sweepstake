@@ -97,16 +97,8 @@ const fixtures = [
   {
     id: "R32-3",
     date: "28 Jun 2026 - 8:00 PM",
-    home: {
-      name: "South Africa",
-      code: "za",
-      owner: "Darshan"
-    },
-    away: {
-      name: "Canada",
-      code: "ca",
-      owner: "Heja"
-    },
+    home: { name: "South Africa", code: "za", owner: "Darshan" },
+    away: { name: "Canada", code: "ca", owner: "Heja" },
     result: "0-1",
     winner: "Canada"
   },
@@ -114,16 +106,8 @@ const fixtures = [
   {
     id: "R32-9",
     date: "29 Jun 2026 - 6:00 PM",
-    home: {
-      name: "Brazil",
-      code: "br",
-      owner: "Karl"
-    },
-    away: {
-      name: "Japan",
-      code: "jp",
-      owner: "Heja"
-    },
+    home: { name: "Brazil", code: "br", owner: "Karl" },
+    away: { name: "Japan", code: "jp", owner: "Heja" },
     result: "2-1",
     winner: "Brazil"
   },
@@ -131,16 +115,8 @@ const fixtures = [
   {
     id: "R32-1",
     date: "29 Jun 2026 - 9:30 PM",
-    home: {
-      name: "Germany",
-      code: "de",
-      owner: "Heja"
-    },
-    away: {
-      name: "Paraguay",
-      code: "py",
-      owner: "Karl"
-    },
+    home: { name: "Germany", code: "de", owner: "Heja" },
+    away: { name: "Paraguay", code: "py", owner: "Karl" },
     result: "1-1 (Paraguay pens)",
     winner: "Paraguay"
   },
@@ -148,16 +124,8 @@ const fixtures = [
   {
     id: "R32-4",
     date: "30 Jun 2026 - 2:00 AM",
-    home: {
-      name: "Netherlands",
-      code: "nl",
-      owner: "Betim"
-    },
-    away: {
-      name: "Morocco",
-      code: "ma",
-      owner: "Darshan"
-    },
+    home: { name: "Netherlands", code: "nl", owner: "Betim" },
+    away: { name: "Morocco", code: "ma", owner: "Darshan" },
     result: "1-1 (Morocco pens)",
     winner: "Morocco"
   },
@@ -165,16 +133,8 @@ const fixtures = [
   {
     id: "R32-10",
     date: "30 Jun 2026 - 6:00 PM",
-    home: {
-      name: "Ivory Coast",
-      code: "ci",
-      owner: "Betim"
-    },
-    away: {
-      name: "Norway",
-      code: "no",
-      owner: "Darshan"
-    },
+    home: { name: "Ivory Coast", code: "ci", owner: "Betim" },
+    away: { name: "Norway", code: "no", owner: "Darshan" },
     result: "1-2",
     winner: "Norway"
   },
@@ -182,16 +142,8 @@ const fixtures = [
   {
     id: "R32-2",
     date: "30 Jun 2026 - 10:00 PM",
-    home: {
-      name: "France",
-      code: "fr",
-      owner: "Karl"
-    },
-    away: {
-      name: "Sweden",
-      code: "se",
-      owner: "Betim"
-    },
+    home: { name: "France", code: "fr", owner: "Karl" },
+    away: { name: "Sweden", code: "se", owner: "Betim" },
     result: "3-0",
     winner: "France"
   },
@@ -199,16 +151,8 @@ const fixtures = [
   {
     id: "R32-11",
     date: "01 Jul 2026 - 2:00 AM",
-    home: {
-      name: "Mexico",
-      code: "mx",
-      owner: "Heja"
-    },
-    away: {
-      name: "Ecuador",
-      code: "ec",
-      owner: "Darshan"
-    },
+    home: { name: "Mexico", code: "mx", owner: "Heja" },
+    away: { name: "Ecuador", code: "ec", owner: "Darshan" },
     result: "2-0",
     winner: "Mexico"
   },
@@ -216,33 +160,17 @@ const fixtures = [
   {
     id: "R32-12",
     date: "01 Jul 2026 - 5:00 PM",
-    home: {
-      name: "England",
-      code: "eng",
-      owner: "Krishan"
-    },
-    away: {
-      name: "DR Congo",
-      code: "cd",
-      owner: "Heja"
-    },
+    home: { name: "England", code: "eng", owner: "Krishan" },
+    away: { name: "DR Congo", code: "cd", owner: "Heja" },
     result: "2-1",
-      winner: "England"
+    winner: "England"
   },
 
   {
     id: "R32-8",
     date: "01 Jul 2026 - 9:00 PM",
-    home: {
-      name: "Belgium",
-      code: "be",
-      owner: "Darshan"
-    },
-    away: {
-      name: "Senegal",
-      code: "sn",
-      owner: "Karl"
-    },
+    home: { name: "Belgium", code: "be", owner: "Darshan" },
+    away: { name: "Senegal", code: "sn", owner: "Karl" },
     result: "3-2",
     winner: "Belgium"
   },
@@ -250,16 +178,8 @@ const fixtures = [
   {
     id: "R32-7",
     date: "02 Jul 2026 - 2:00 AM",
-    home: {
-      name: "USA",
-      code: "us",
-      owner: "Krishan"
-    },
-    away: {
-      name: "Bosnia",
-      code: "ba",
-      owner: "Betim"
-    },
+    home: { name: "USA", code: "us", owner: "Krishan" },
+    away: { name: "Bosnia", code: "ba", owner: "Betim" },
     result: "2-0",
     winner: "USA"
   },
@@ -267,33 +187,17 @@ const fixtures = [
   {
     id: "R32-6",
     date: "02 Jul 2026 - 8:00 PM",
-    home: {
-      name: "Spain",
-      code: "es",
-      owner: "Betim"
-    },
-    away: {
-      name: "Austria",
-      code: "at",
-      owner: "Karl"
-    },
+    home: { name: "Spain", code: "es", owner: "Betim" },
+    away: { name: "Austria", code: "at", owner: "Karl" },
     result: "",
     winner: ""
-  }
+  },
 
-{
-  id: "R32-5",
-  date: "03 Jul 2026 - 12:00 AM",
-  home: {
-    name: "Portugal",
-    code: "pt",
-    owner: "Darshan"
-    },
-  away: {
-      name: "Croatia",
-      code: "hr",
-      owner: "Krishan"
-    },
+  {
+    id: "R32-5",
+    date: "03 Jul 2026 - 12:00 AM",
+    home: { name: "Portugal", code: "pt", owner: "Darshan" },
+    away: { name: "Croatia", code: "hr", owner: "Krishan" },
     result: "",
     winner: ""
   },
@@ -301,16 +205,8 @@ const fixtures = [
   {
     id: "R32-15",
     date: "03 Jul 2026 - 4:00 AM",
-    home: {
-      name: "Switzerland",
-      code: "ch",
-      owner: "Krishan"
-    },
-    away: {
-      name: "Algeria",
-      code: "dz",
-      owner: "Karl"
-    },
+    home: { name: "Switzerland", code: "ch", owner: "Krishan" },
+    away: { name: "Algeria", code: "dz", owner: "Karl" },
     result: "",
     winner: ""
   },
@@ -318,16 +214,8 @@ const fixtures = [
   {
     id: "R32-14",
     date: "03 Jul 2026 - 7:00 PM",
-    home: {
-      name: "Australia",
-      code: "au",
-      owner: "Krishan"
-    },
-    away: {
-      name: "Egypt",
-      code: "eg",
-      owner: "Darshan"
-    },
+    home: { name: "Australia", code: "au", owner: "Krishan" },
+    away: { name: "Egypt", code: "eg", owner: "Darshan" },
     result: "",
     winner: ""
   },
@@ -335,36 +223,20 @@ const fixtures = [
   {
     id: "R32-13",
     date: "03 Jul 2026 - 11:00 PM",
-    home: {
-      name: "Argentina",
-      code: "ar",
-      owner: "Darshan"
-    },
-    away: {
-      name: "Cape Verde",
-      code: "cv",
-      owner: "Betim"
-    },
+    home: { name: "Argentina", code: "ar", owner: "Darshan" },
+    away: { name: "Cape Verde", code: "cv", owner: "Betim" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R32-16",
+    date: "04 Jul 2026 - 2:30 AM",
+    home: { name: "Colombia", code: "co", owner: "Krishan" },
+    away: { name: "Ghana", code: "gh", owner: "Darshan" },
     result: "",
     winner: ""
   }
-
-{
-  id: "R32-16",
-  date: "04 Jul 2026 - 2:30 AM",
-  home: {
-    name: "Colombia",
-    code: "co",
-    owner: "Krishan"
-  },
-  away: {
-    name: "Ghana",
-    code: "gh",
-    owner: "Darshan"
-  },
-  result: "",
-  winner: ""
-}
 
 ];
 
