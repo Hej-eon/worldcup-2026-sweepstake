@@ -454,3 +454,55 @@ const bracketData = {
   ]
 
 };
+
+function getWinner(matchId) {
+  const match = fixtures.find(f => f.id === matchId);
+
+  if (!match) return "?";
+
+  return match.winner || "?";
+}
+
+const roundOf16 = [
+
+  {
+    home: getWinner("R32-1"),
+    away: getWinner("R32-2")
+  },
+
+  {
+    home: getWinner("R32-3"),
+    away: getWinner("R32-4")
+  },
+
+  {
+    home: getWinner("R32-5"),
+    away: getWinner("R32-6")
+  },
+
+  {
+    home: getWinner("R32-7"),
+    away: getWinner("R32-8")
+  },
+
+  {
+    home: getWinner("R32-9"),
+    away: getWinner("R32-10")
+  },
+
+  {
+    home: getWinner("R32-11"),
+    away: getWinner("R32-12")
+  },
+
+  {
+    home: getWinner("R32-13"),
+    away: getWinner("R32-14")
+  },
+
+  {
+    home: getWinner("R32-15"),
+    away: getWinner("R32-16")
+  }
+
+];
