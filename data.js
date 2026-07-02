@@ -208,14 +208,14 @@ const bracketData = {
       id: "R32-1",
       home: { name: "Germany", code: "de", owner: "Heja" },
       away: { name: "Paraguay", code: "py", owner: "Karl" },
-      winner: ""
+      winner: "Paraguay"
     },
 
     {
       id: "R32-2",
       home: { name: "France", code: "fr", owner: "Karl" },
       away: { name: "Sweden", code: "se", owner: "Betim" },
-      winner: ""
+      winner: "France"
     },
 
     {
