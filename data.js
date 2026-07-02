@@ -103,6 +103,12 @@ const fixtures = [
     match: "",
     result: ""
   }
+  {
+  date: "2 Jul 2026 - 8:00 PM",
+  home: { name: "Spain", code: "es" },
+  away: { name: "Austria", code: "at" },
+  result: ""
+  }
 ];
 
 const standingsBody = document.querySelector("#standings tbody");
