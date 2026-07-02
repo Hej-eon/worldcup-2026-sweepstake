@@ -7,19 +7,6 @@
 
 <style>
 
-.slot{
-    position:relative;
-}
-
-.slot::before{
-    content:"";
-    position:absolute;
-    width:20px;
-    border-top:2px solid #999;
-    left:-20px;
-    top:50%;
-}
-    
 body{
     font-family:Arial,sans-serif;
     background:#f4f4f4;
@@ -103,16 +90,6 @@ h1{
 
 .slot{
     height:70px;
-    position:relative;
-}
-
-.slot::before{
-    content:"";
-    position:absolute;
-    left:-20px;
-    top:50%;
-    width:20px;
-    border-top:2px solid #999;
 }
 
 .champ{
@@ -276,45 +253,41 @@ h1{
 
 roundOf16.forEach((match, index) => {
 
-    const slot = document.getElementById(`r16-${index + 1}`);
+    const slot =
+        document.getElementById(`r16-${index + 1}`);
 
-    if (!slot) return;
+    if(slot){
 
-    let html = "";
+slot.innerHTML = `
 
-    if (match.home) {
-        html += `
-            <div class="team">
-                ${getFlag(match.home)}
-                ${match.home.name}
-            </div>
-            <div class="owner">
-                ${match.home.owner}
-            </div>
-        `;
-    } else {
-        html += `
-            <div class="team">?</div>
-        `;
+<div class="team">
+    ${
+      match.home
+      ? `<img src="${getFlag(match.home)}">
+         ${match.home.name}`
+      : "?"
     }
+</div>
 
-    if (match.away) {
-        html += `
-            <div class="team">
-                ${getFlag(match.away)}
-                ${match.away.name}
-            </div>
-            <div class="owner">
-                ${match.away.owner}
-            </div>
-        `;
-    } else {
-        html += `
-            <div class="team">?</div>
-        `;
+<div class="owner">
+    ${match.home ? match.home.owner : ""}
+</div>
+
+<div class="team">
+    ${
+      match.away
+      ? `<img src="${getFlag(match.away)}">
+         ${match.away.name}`
+      : "?"
     }
+</div>
 
-    slot.innerHTML = html;
+<div class="owner">
+    ${match.away ? match.away.owner : ""}
+</div>
+
+`;
+    }
 
 });
 
