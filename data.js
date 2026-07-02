@@ -65,8 +65,8 @@ const sweepstake = {
 
 // ADD ELIMINATED TEAMS HERE
 const eliminatedTeams = [
-  // "Tunisia",
-  // "Brazil"
+  "Tunisia",
+  "New Zealand",
 ];
 
 // ADD FIXTURES HERE
