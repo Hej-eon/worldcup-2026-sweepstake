@@ -282,14 +282,14 @@ const fixtures = [
   }
 
 {
-    id: "R32-5",
-    date: "03 Jul 2026 - 12:00 AM",
-    home: {
-      name: "Portugal",
-      code: "pt",
-      owner: "Darshan"
+  id: "R32-5",
+  date: "03 Jul 2026 - 12:00 AM",
+  home: {
+    name: "Portugal",
+    code: "pt",
+    owner: "Darshan"
     },
-    away: {
+  away: {
       name: "Croatia",
       code: "hr",
       owner: "Krishan"
