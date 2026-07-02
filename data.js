@@ -281,6 +281,91 @@ const fixtures = [
     winner: ""
   }
 
+{
+    id: "R32-5",
+    date: "03 Jul 2026 - 12:00 AM",
+    home: {
+      name: "Portugal",
+      code: "pt",
+      owner: "Darshan"
+    },
+    away: {
+      name: "Croatia",
+      code: "hr",
+      owner: "Krishan"
+    },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R32-15",
+    date: "03 Jul 2026 - 4:00 AM",
+    home: {
+      name: "Switzerland",
+      code: "ch",
+      owner: "Krishan"
+    },
+    away: {
+      name: "Algeria",
+      code: "dz",
+      owner: "Karl"
+    },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R32-14",
+    date: "03 Jul 2026 - 7:00 PM",
+    home: {
+      name: "Australia",
+      code: "au",
+      owner: "Krishan"
+    },
+    away: {
+      name: "Egypt",
+      code: "eg",
+      owner: "Darshan"
+    },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R32-13",
+    date: "03 Jul 2026 - 11:00 PM",
+    home: {
+      name: "Argentina",
+      code: "ar",
+      owner: "Darshan"
+    },
+    away: {
+      name: "Cape Verde",
+      code: "cv",
+      owner: "Betim"
+    },
+    result: "",
+    winner: ""
+  }
+
+{
+  id: "R32-16",
+  date: "04 Jul 2026 - 2:30 AM",
+  home: {
+    name: "Colombia",
+    code: "co",
+    owner: "Krishan"
+  },
+  away: {
+    name: "Ghana",
+    code: "gh",
+    owner: "Darshan"
+  },
+  result: "",
+  winner: ""
+}
+
 ];
 
 function getFlag(team) {
