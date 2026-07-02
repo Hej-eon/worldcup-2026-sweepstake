@@ -88,6 +88,9 @@ const eliminatedTeams = [
   "Scotland",
   "Germany",
   "Japan",
+  "Qatar",
+  "Saudi Arabia",
+  "Haiti",
   
   
   
