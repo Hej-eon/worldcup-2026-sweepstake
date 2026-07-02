@@ -70,6 +70,16 @@ const eliminatedTeams = [
   "South Korea",
   "Iraq",
   "Senegal",
+  "Iran",
+  "Bosnia",
+  "Jordan",
+  "Ivory Coast",
+  "Sweden",
+  "Panama",
+  "Czech Republic",
+  "Netherlands",
+  
+  
   
   
 ];
