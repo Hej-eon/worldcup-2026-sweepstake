@@ -258,11 +258,35 @@ roundOf16.forEach((match, index) => {
 
     if(slot){
 
-        slot.innerHTML = `
-            <strong>${match.home}</strong>
-            <br><br>
-            <strong>${match.away}</strong>
-        `;
+slot.innerHTML = `
+
+<div class="team">
+    ${
+      match.home
+      ? `<img src="${getFlag(match.home)}">
+         ${match.home.name}`
+      : "?"
+    }
+</div>
+
+<div class="owner">
+    ${match.home ? match.home.owner : ""}
+</div>
+
+<div class="team">
+    ${
+      match.away
+      ? `<img src="${getFlag(match.away)}">
+         ${match.away.name}`
+      : "?"
+    }
+</div>
+
+<div class="owner">
+    ${match.away ? match.away.owner : ""}
+</div>
+
+`;
     }
 
 });
