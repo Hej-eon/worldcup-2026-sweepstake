@@ -7,6 +7,19 @@
 
 <style>
 
+.slot{
+    position:relative;
+}
+
+.slot::before{
+    content:"";
+    position:absolute;
+    width:20px;
+    border-top:2px solid #999;
+    left:-20px;
+    top:50%;
+}
+    
 body{
     font-family:Arial,sans-serif;
     background:#f4f4f4;
