@@ -57,3 +57,21 @@ th {
   color: red;
   opacity: 0.65;
 }
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    background: #24292f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #0366d6;
+}
