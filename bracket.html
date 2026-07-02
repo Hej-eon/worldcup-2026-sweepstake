@@ -3,103 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Knockout Bracket</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="bracket.css"
 
 <style>
 
-body {
-    max-width: none !important;
-    overflow-x: auto;
+body{
+    max-width:none !important;
+    overflow-x:auto;
 }
 
-h1 {
-    text-align: center;
+.bracket-container{
+    width:3000px;
+    padding:20px;
 }
 
-.bracket-wrapper {
-    width: 2400px;
-    margin: 0 auto;
-}
-
-.bracket {
-    display: grid;
+.bracket{
+    display:grid;
     grid-template-columns:
         280px
         220px
         220px
         220px
-        300px
+        260px
         220px
         220px
         220px
         280px;
-
-    gap: 20px;
-    padding: 20px;
+    gap:20px;
 }
 
-.round {
-    display: flex;
-    flex-direction: column;
+.round{
+    display:flex;
+    flex-direction:column;
 }
 
-.round h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.round h2{
+    text-align:center;
+    margin-bottom:20px;
 }
 
-.match {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 12px;
-    margin-bottom: 20px;
+.match{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:20px;
 }
 
-.team {
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
+.team{
+    display:flex;
+    align-items:center;
+    padding:8px 0;
 }
 
-.flag {
-    width: 28px;
-    height: 20px;
-    object-fit: cover;
-    margin-right: 10px;
-    border: 1px solid #ccc;
+.flag{
+    width:28px;
+    height:20px;
+    margin-right:10px;
+    border:1px solid #ccc;
 }
 
-.spacer-small {
-    height: 80px;
+.r16-1{margin-top:80px;}
+.r16-2{margin-top:220px;}
+.r16-3{margin-top:220px;}
+.r16-4{margin-top:220px;}
+
+.qf-1{margin-top:220px;}
+.qf-2{margin-top:500px;}
+
+.sf-1{margin-top:430px;}
+
+.final{
+    margin-top:430px;
 }
 
-.spacer-medium {
-    height: 180px;
+.champion{
+    margin-top:60px;
+    background:white;
+    border:2px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
 }
 
-.spacer-large {
-    height: 380px;
-}
-
-.final-box,
-.champion-box {
-    background: white;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.champion-box {
-    margin-top: 40px;
-}
-
-.trophy {
-    font-size: 70px;
+h1{
+    text-align:center;
 }
 
 </style>
@@ -115,114 +106,192 @@ h1 {
 
 <h1>🏅 FIFA WORLD CUP 2026 KNOCKOUT BRACKET</h1>
 
-<div class="bracket-wrapper">
+<div class="bracket-container">
 
 <div class="bracket">
 
-    <!-- LEFT ROUND OF 32 -->
+<!-- LEFT R32 -->
 
-    <div class="round">
-        <h2>Round of 32</h2>
+<div class="round">
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/de.png">Germany</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/py.png">Paraguay</div>
-        </div>
+<h2>Round of 32</h2>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/fr.png">France</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/se.png">Sweden</div>
-        </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/de.png">Germany</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/py.png">Paraguay</div>
+</div>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/za.png">South Africa</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/ca.png">Canada</div>
-        </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/fr.png">France</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/se.png">Sweden</div>
+</div>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/nl.png">Netherlands</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/ma.png">Morocco</div>
-        </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/za.png">South Africa</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ca.png">Canada</div>
+</div>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/pt.png">Portugal</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/hr.png">Croatia</div>
-        </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/nl.png">Netherlands</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ma.png">Morocco</div>
+</div>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/es.png">Spain</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/at.png">Austria</div>
-        </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/pt.png">Portugal</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/hr.png">Croatia</div>
+</div>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/us.png">USA</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/ba.png">Bosnia</div>
-        </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/es.png">Spain</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/at.png">Austria</div>
+</div>
 
-        <div class="match">
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/be.png">Belgium</div>
-            <div class="team"><img class="flag" src="https://flagcdn.com/w40/sn.png">Senegal</div>
-        </div>
-    </div>
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/us.png">USA</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ba.png">Bosnia</div>
+</div>
 
-    <!-- LEFT R16 -->
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/be.png">Belgium</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/sn.png">Senegal</div>
+</div>
 
-    <div class="round">
-        <h2>Round of 16</h2>
+</div>
 
-        <div class="spacer-small"></div>
+<!-- LEFT R16 -->
 
-        <div class="match">?<br><br>?</div>
+<div class="round">
 
-        <div class="spacer-medium"></div>
+<h2>Round of 16</h2>
 
-        <div class="match">?<br><br>?</div>
+<div class="match r16-1">?<br><br>?</div>
+<div class="match r16-2">?<br><br>?</div>
+<div class="match r16-3">?<br><br>?</div>
+<div class="match r16-4">?<br><br>?</div>
 
-        <div class="spacer-medium"></div>
+</div>
 
-        <div class="match">?<br><br>?</div>
+<!-- LEFT QF -->
 
-        <div class="spacer-medium"></div>
+<div class="round">
 
-        <div class="match">?<br><br>?</div>
-    </div>
+<h2>Quarter Finals</h2>
 
-    <!-- LEFT QF -->
+<div class="match qf-1">?<br><br>?</div>
+<div class="match qf-2">?<br><br>?</div>
 
-    <div class="round">
-        <h2>Quarter Finals</h2>
+</div>
 
-        <div class="spacer-large"></div>
+<!-- LEFT SF -->
 
-        <div class="match">?<br><br>?</div>
+<div class="round">
 
-        <div class="spacer-large"></div>
+<h2>Semi Final</h2>
 
-        <div class="match">?<br><br>?</div>
-    </div>
+<div class="match sf-1">?<br><br>?</div>
 
-    <!-- LEFT SF -->
+</div>
 
-    <div class="round">
-        <h2>Semi Final</h2>
+<!-- FINAL -->
 
-        <div class="spacer-large"></div>
+<div class="round">
 
-        <div class="match">?<br><br>?</div>
-    </div>
+<h2>Final</h2>
 
-    <!-- FINAL -->
+<div class="match final">?<br><br>?</div>
 
-    <div class="round">
+<div class="champion">
+<h2>World Champion</h2>
+<h1>?</h1>
+🏆
+</div>
 
-        <h2>Final</h2>
+</div>
 
-        <div class="spacer-large"></div>
+<!-- RIGHT SF -->
 
-        <div class="final-box">
-            ?<br><br>?
-        </div>
+<div class="round">
 
-        <div class="champion-box">
-            <h2>World Champion</h2>
-            <h1>?</h1>
+<h2>Semi Final</h2>
+
+<div class="match sf-1">?<br><br>?</div>
+
+</div>
+
+<!-- RIGHT QF -->
+
+<div class="round">
+
+<h2>Quarter Finals</h2>
+
+<div class="match qf-1">?<br><br>?</div>
+<div class="match qf-2">?<br><br>?</div>
+
+</div>
+
+<!-- RIGHT R16 -->
+
+<div class="round">
+
+<h2>Round of 16</h2>
+
+<div class="match r16-1">?<br><br>?</div>
+<div class="match r16-2">?<br><br>?</div>
+<div class="match r16-3">?<br><br>?</div>
+<div class="match r16-4">?<br><br>?</div>
+
+</div>
+
+<!-- RIGHT R32 -->
+
+<div class="round">
+
+<h2>Round of 32</h2>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/br.png">Brazil</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/jp.png">Japan</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ci.png">Ivory Coast</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/no.png">Norway</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/mx.png">Mexico</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ec.png">Ecuador</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg">England</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/cd.png">DR Congo</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ar.png">Argentina</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/cv.png">Cape Verde</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/au.png">Australia</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/eg.png">Egypt</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/ch.png">Switzerland</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/dz.png">Algeria</div>
+</div>
+
+<div class="match">
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/co.png">Colombia</div>
+<div class="team"><img class="flag" src="https://flagcdn.com/w40/gh.png">Ghana</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
