@@ -199,3 +199,127 @@ if (fixturesBody) {
     `;
   });
 }
+
+const bracketData = {
+
+  leftSide: [
+
+    {
+      id: "R32-1",
+      home: { name: "Germany", code: "de", owner: "Heja" },
+      away: { name: "Paraguay", code: "py", owner: "Karl" },
+      winner: ""
+    },
+
+    {
+      id: "R32-2",
+      home: { name: "France", code: "fr", owner: "Karl" },
+      away: { name: "Sweden", code: "se", owner: "Betim" },
+      winner: ""
+    },
+
+    {
+      id: "R32-3",
+      home: { name: "South Africa", code: "za", owner: "Darshan" },
+      away: { name: "Canada", code: "ca", owner: "Heja" },
+      winner: ""
+    },
+
+    {
+      id: "R32-4",
+      home: { name: "Netherlands", code: "nl", owner: "Betim" },
+      away: { name: "Morocco", code: "ma", owner: "Darshan" },
+      winner: ""
+    },
+
+    {
+      id: "R32-5",
+      home: { name: "Portugal", code: "pt", owner: "Darshan" },
+      away: { name: "Croatia", code: "hr", owner: "Krishan" },
+      winner: ""
+    },
+
+    {
+      id: "R32-6",
+      home: { name: "Spain", code: "es", owner: "Betim" },
+      away: { name: "Austria", code: "at", owner: "Karl" },
+      winner: ""
+    },
+
+    {
+      id: "R32-7",
+      home: { name: "USA", code: "us", owner: "Krishan" },
+      away: { name: "Bosnia", code: "ba", owner: "Betim" },
+      winner: ""
+    },
+
+    {
+      id: "R32-8",
+      home: { name: "Belgium", code: "be", owner: "Darshan" },
+      away: { name: "Senegal", code: "sn", owner: "Karl" },
+      winner: ""
+    }
+
+  ],
+
+  rightSide: [
+
+    {
+      id: "R32-9",
+      home: { name: "Brazil", code: "br", owner: "Karl" },
+      away: { name: "Japan", code: "jp", owner: "Heja" },
+      winner: ""
+    },
+
+    {
+      id: "R32-10",
+      home: { name: "Ivory Coast", code: "ci", owner: "Betim" },
+      away: { name: "Norway", code: "no", owner: "Darshan" },
+      winner: ""
+    },
+
+    {
+      id: "R32-11",
+      home: { name: "Mexico", code: "mx", owner: "Heja" },
+      away: { name: "Ecuador", code: "ec", owner: "Darshan" },
+      winner: ""
+    },
+
+    {
+      id: "R32-12",
+      home: { name: "England", code: "eng", owner: "Krishan" },
+      away: { name: "DR Congo", code: "cd", owner: "Heja" },
+      winner: ""
+    },
+
+    {
+      id: "R32-13",
+      home: { name: "Argentina", code: "ar", owner: "Darshan" },
+      away: { name: "Cape Verde", code: "cv", owner: "Betim" },
+      winner: ""
+    },
+
+    {
+      id: "R32-14",
+      home: { name: "Australia", code: "au", owner: "Krishan" },
+      away: { name: "Egypt", code: "eg", owner: "Darshan" },
+      winner: ""
+    },
+
+    {
+      id: "R32-15",
+      home: { name: "Switzerland", code: "ch", owner: "Krishan" },
+      away: { name: "Algeria", code: "dz", owner: "Karl" },
+      winner: ""
+    },
+
+    {
+      id: "R32-16",
+      home: { name: "Colombia", code: "co", owner: "Krishan" },
+      away: { name: "Ghana", code: "gh", owner: "Darshan" },
+      winner: ""
+    }
+
+  ]
+
+};
