@@ -67,7 +67,7 @@ const sweepstake = {
 Add eliminated teams here exactly as written above
 */
 const eliminatedTeams = [
-    // "🇹🇳 Tunisia"
+    "🇹🇳 Tunisia"
 ];
 
 /*
