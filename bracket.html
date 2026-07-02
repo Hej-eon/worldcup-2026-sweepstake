@@ -1,40 +1,273 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Knockout Bracket</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knockout Bracket</title>
+
 <style>
-body{font-family:Arial,sans-serif;background:#f4f4f4;margin:0;padding:20px;overflow-x:auto}
-nav a{background:#24292f;color:#fff;text-decoration:none;padding:10px 14px;border-radius:6px;margin-right:8px}
-h1{text-align:center}.wrap{min-width:2600px}
-.grid{display:grid;grid-template-columns:300px 220px 220px 220px 260px 220px 220px 220px 300px;gap:16px}
-.col h2{text-align:center}.match,.slot,.champ{background:#fff;border:1px solid #ddd;border-radius:10px;padding:10px}.match{height:92px;margin-bottom:16px}.team{display:flex;align-items:center;margin:4px 0}.team img{width:24px;height:18px;margin-right:8px}.owner{font-size:11px;color:#666;margin-left:32px}.slot{height:70px}.champ{text-align:center;padding:24px}.s1{margin-top:120px}.s2{margin-top:150px}.s3{margin-top:300px}.s4{margin-top:520px}.s5{margin-top:520px}
-</style></head><body>
-<nav><a href="index.html">🏆 Sweepstake</a><a href="fixtures.html">📅 Fixtures</a><a href="bracket.html"> 🏅 Knockout Bracket</a></nav>
-<h1>FIFA WORLD CUP 2026 KNOCKOUT BRACKET</h1><div class="wrap"><div class="grid">
-<div class="col"><h2>Round of 32</h2>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:20px;
+    overflow-x:auto;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    background:#24292f;
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:6px;
+    margin-right:8px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.wrap{
+    min-width:2600px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:
+        300px
+        220px
+        220px
+        220px
+        260px
+        220px
+        220px
+        220px
+        300px;
+    gap:16px;
+}
+
+.col h2{
+    text-align:center;
+}
+
+.match,
+.slot,
+.champ{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:10px;
+}
+
+.match{
+    height:92px;
+    margin-bottom:16px;
+}
+
+.team{
+    display:flex;
+    align-items:center;
+    margin:4px 0;
+}
+
+.team img{
+    width:24px;
+    height:18px;
+    margin-right:8px;
+}
+
+.owner{
+    font-size:11px;
+    color:#666;
+    margin-left:32px;
+}
+
+.slot{
+    height:70px;
+}
+
+.champ{
+    text-align:center;
+    padding:24px;
+}
+
+.s1{margin-top:120px;}
+.s2{margin-top:150px;}
+.s3{margin-top:300px;}
+.s4{margin-top:520px;}
+.s5{margin-top:520px;}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏆 Sweepstake</a>
+    <a href="fixtures.html">📅 Fixtures</a>
+    <a href="bracket.html">🏅 Knockout Bracket</a>
+</nav>
+
+<h1>FIFA WORLD CUP 2026 KNOCKOUT BRACKET</h1>
+
+<div class="wrap">
+<div class="grid">
+
+<!-- LEFT R32 -->
+
+<div class="col">
+<h2>Round of 32</h2>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/de.png">Germany</div><div class="owner">Heja</div><div class="team"><img src="https://flagcdn.com/w40/py.png">Paraguay</div><div class="owner">Karl</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/fr.png">France</div><div class="owner">Karl</div><div class="team"><img src="https://flagcdn.com/w40/se.png">Sweden</div><div class="owner">Betim</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/za.png">South Africa</div><div class="owner">Darshan</div><div class="team"><img src="https://flagcdn.com/w40/ca.png">Canada</div><div class="owner">Heja</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/nl.png">Netherlands</div><div class="owner">Betim</div><div class="team"><img src="https://flagcdn.com/w40/ma.png">Morocco</div><div class="owner">Darshan</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/pt.png">Portugal</div><div class="owner">Darshan</div><div class="team"><img src="https://flagcdn.com/w40/hr.png">Croatia</div><div class="owner">Krishan</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/es.png">Spain</div><div class="owner">Betim</div><div class="team"><img src="https://flagcdn.com/w40/at.png">Austria</div><div class="owner">Karl</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/us.png">USA</div><div class="owner">Krishan</div><div class="team"><img src="https://flagcdn.com/w40/ba.png">Bosnia</div><div class="owner">Betim</div></div>
-<div class="match"><div class="team"><img src="https://flagcdn.com/w40/be.png">Belgium</div><div class="owner">Darshan</div><div class="team"><img src="https://flagcdn.com/w40/sn.png">Senegal</div><div class="owner">Karl</div></div></div>
+
+<div class="match"><div class="team"><img src="https://flagcdn.com/w40/be.png">Belgium</div><div class="owner">Darshan</div><div class="team"><img src="https://flagcdn.com/w40/sn.png">Senegal</div><div class="owner">Karl</div></div>
+
+</div>
+
+<!-- LEFT R16 -->
+
+<div class="col">
+<h2>Round of 16</h2>
+
 <div class="slot s1" id="r16-1"></div>
 <div class="slot s2" id="r16-2"></div>
 <div class="slot s2" id="r16-3"></div>
 <div class="slot s2" id="r16-4"></div>
-<div class="col"><h2>QF</h2><div class="slot s3">?<br>?</div><div class="slot s4">?<br>?</div></div>
-<div class="col"><h2>SF</h2><div class="slot s5">?<br>?</div></div>
-<div class="col"><h2>Final</h2><div class="slot s5">?<br>?</div><div class="champ"><h2>World Champion</h2><h1>?</h1>🏆</div></div>
-<div class="col"><h2>SF</h2><div class="slot s5">?<br>?</div></div>
-<div class="col"><h2>QF</h2><div class="slot s3">?<br>?</div><div class="slot s4">?<br>?</div></div>
-<div class="col"><h2>R16</h2><div class="slot s1">?<br>?</div><div class="slot s2">?<br>?</div><div class="slot s2">?<br>?</div><div class="slot s2">?<br>?</div></div>
-<div class="col"><h2>Round of 32</h2>
+
+</div>
+
+<!-- LEFT QF -->
+
+<div class="col">
+<h2>QF</h2>
+
+<div class="slot s3">?</div>
+<div class="slot s4">?</div>
+
+</div>
+
+<!-- LEFT SF -->
+
+<div class="col">
+<h2>SF</h2>
+
+<div class="slot s5">?</div>
+
+</div>
+
+<!-- FINAL -->
+
+<div class="col">
+
+<h2>Final</h2>
+
+<div class="slot s5">?</div>
+
+<div class="champ">
+<h2>World Champion</h2>
+<h1>?</h1>
+🏆
+</div>
+
+</div>
+
+<!-- RIGHT SF -->
+
+<div class="col">
+<h2>SF</h2>
+
+<div class="slot s5">?</div>
+
+</div>
+
+<!-- RIGHT QF -->
+
+<div class="col">
+<h2>QF</h2>
+
+<div class="slot s3">?</div>
+<div class="slot s4">?</div>
+
+</div>
+
+<!-- RIGHT R16 -->
+
+<div class="col">
+<h2>Round of 16</h2>
+
+<div class="slot s1" id="r16-5"></div>
+<div class="slot s2" id="r16-6"></div>
+<div class="slot s2" id="r16-7"></div>
+<div class="slot s2" id="r16-8"></div>
+
+</div>
+
+<!-- RIGHT R32 -->
+
+<div class="col">
+
+<h2>Round of 32</h2>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/br.png">Brazil</div><div class="owner">Karl</div><div class="team"><img src="https://flagcdn.com/w40/jp.png">Japan</div><div class="owner">Heja</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/ci.png">Ivory Coast</div><div class="owner">Betim</div><div class="team"><img src="https://flagcdn.com/w40/no.png">Norway</div><div class="owner">Darshan</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/mx.png">Mexico</div><div class="owner">Heja</div><div class="team"><img src="https://flagcdn.com/w40/ec.png">Ecuador</div><div class="owner">Darshan</div></div>
+
 <div class="match"><div class="team"><img src="https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg">England</div><div class="owner">Krishan</div><div class="team"><img src="https://flagcdn.com/w40/cd.png">DR Congo</div><div class="owner">Heja</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/ar.png">Argentina</div><div class="owner">Darshan</div><div class="team"><img src="https://flagcdn.com/w40/cv.png">Cape Verde</div><div class="owner">Betim</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/au.png">Australia</div><div class="owner">Krishan</div><div class="team"><img src="https://flagcdn.com/w40/eg.png">Egypt</div><div class="owner">Darshan</div></div>
+
 <div class="match"><div class="team"><img src="https://flagcdn.com/w40/ch.png">Switzerland</div><div class="owner">Krishan</div><div class="team"><img src="https://flagcdn.com/w40/dz.png">Algeria</div><div class="owner">Karl</div></div>
-<div class="match"><div class="team"><img src="https://flagcdn.com/w40/co.png">Colombia</div><div class="owner">Krishan</div><div class="team"><img src="https://flagcdn.com/w40/gh.png">Ghana</div><div class="owner">Darshan</div></div></div>
-</div></div></body></html>
+
+<div class="match"><div class="team"><img src="https://flagcdn.com/w40/co.png">Colombia</div><div class="owner">Krishan</div><div class="team"><img src="https://flagcdn.com/w40/gh.png">Ghana</div><div class="owner">Darshan</div></div>
+
+</div>
+
+</div>
+</div>
+
+<script src="data.js"></script>
+
+<script>
+
+roundOf16.forEach((match, index) => {
+
+    const slot =
+        document.getElementById(`r16-${index + 1}`);
+
+    if(slot){
+
+        slot.innerHTML = `
+            <strong>${match.home}</strong>
+            <br><br>
+            <strong>${match.away}</strong>
+        `;
+    }
+
+});
+
+</script>
+
+</body>
+</html>
