@@ -63,7 +63,6 @@ const sweepstake = {
   ]
 };
 
-// ADD ELIMINATED TEAMS HERE
 const eliminatedTeams = [
   "Tunisia",
   "New Zealand",
@@ -90,17 +89,22 @@ const eliminatedTeams = [
   "Japan",
   "Qatar",
   "Saudi Arabia",
-  "Haiti",
-  
-  
-  
+  "Haiti"
 ];
 
-// ADD FIXTURES HERE
 const fixtures = [
   {
-    date: "",
-    match: "",
+    date: "2 Jul 2026 - 8:00 PM",
+    home: {
+      name: "Spain",
+      code: "es",
+      owner: "Betim"
+    },
+    away: {
+      name: "Austria",
+      code: "at",
+      owner: "Karl"
+    },
     result: ""
   }
 ];
@@ -170,7 +174,21 @@ fixtures.forEach(fixture => {
   fixturesBody.innerHTML += `
     <tr>
       <td>${fixture.date}</td>
-      <td>${fixture.match}</td>
+
+      <td>
+        <img class="flag"
+             src="${getFlag(fixture.home)}"
+             alt="${fixture.home.name}">
+        ${fixture.home.name} (${fixture.home.owner})
+
+        vs
+
+        <img class="flag"
+             src="${getFlag(fixture.away)}"
+             alt="${fixture.away.name}">
+        ${fixture.away.name} (${fixture.away.owner})
+      </td>
+
       <td>${fixture.result}</td>
     </tr>
   `;
