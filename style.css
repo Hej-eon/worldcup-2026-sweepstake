@@ -1,50 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-    background: #f8f9fa;
+  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  background: #f4f4f4;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-th {
-    background: #24292f;
-    color: white;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
 }
 
 th,
 td {
-    border: 1px solid #ddd;
-    padding: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+th {
+  background: #24292f;
+  color: white;
 }
 
 .player-card {
-    background: white;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .team {
-    display: inline-block;
-    margin: 4px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.flag {
+  width: 28px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 1px solid #ccc;
 }
 
 .eliminated {
-    text-decoration: line-through;
-    color: red;
+  text-decoration: line-through;
+  color: red;
+  opacity: 0.65;
 }
-`
