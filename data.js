@@ -78,7 +78,16 @@ const eliminatedTeams = [
   "Panama",
   "Czech Republic",
   "Netherlands",
-  
+  "South Africa",
+  "Ecuador",
+  "Uzbekistan",
+  "Turkey",
+  "Curacao",
+  "Uruguay",
+  "DR Congo",
+  "Scotland",
+  "Germany",
+  "Japan",
   
   
   
