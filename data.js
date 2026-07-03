@@ -326,6 +326,11 @@ const fixtures = [
 
 {
   id: "QF-1",
+  date: "TBC",
+  home: { name: "TBC", code: "", owner: "" },
+  away: { name: "TBC", code: "", owner: "" },
+  result: "",
+  winner: ""
 }
 
 ];
