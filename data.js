@@ -313,6 +313,15 @@ const fixtures = [
   away: { name: "?", code: "", owner: "" },
   result: "",
   winner: ""
+},
+
+{
+  id: "QF-1",
+  date: "10 Jul 2026 - 8:00 PM",
+  home: { ... },
+  away: { ... },
+  result: "",
+  winner: ""
 }
 
 ];
