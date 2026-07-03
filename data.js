@@ -313,6 +313,20 @@ const fixtures = [
   away: { name: "?", code: "", owner: "" },
   result: "",
   winner: ""
+},
+
+{
+  id: "QF-HEADER",
+  date: "QUARTER FINALS",
+  home: { name: "", code: "", owner: "" },
+  away: { name: "", code: "", owner: "" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "QF-1",
+  ...
 }
 
 ];
@@ -403,7 +417,27 @@ if (fixturesBody) {
         </tr>
       `;
     }
+    
+  if (fixture.id === "QF-HEADER") {
 
+  fixturesBody.innerHTML += `
+    <tr>
+      <td colspan="3"
+          style="
+            font-weight:bold;
+            font-size:22px;
+            text-align:center;
+            background:#f0f0f0;
+            border-top:3px solid #333;
+          ">
+        QUARTER FINALS
+      </td>
+    </tr>
+  `;
+
+  return;
+}
+``
     fixturesBody.innerHTML += `
       <tr>
         <td>${fixture.date}</td>
