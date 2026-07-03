@@ -241,10 +241,7 @@ const fixtures = [
     winner: ""
   }
 ,
-{
-  id: "HEADER-R16",
-  date: "ROUND OF 16",
-},
+
 
 {
   id: "R16-1",
