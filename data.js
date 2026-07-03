@@ -402,6 +402,24 @@ if (fixturesBody) {
           </td>
         </tr>
       `;
+    if (fixture.id === "QF-1") {
+
+  fixturesBody.innerHTML += `
+    <tr>
+      <td colspan="3"
+          style="
+            font-weight:bold;
+            font-size:28px;
+            text-align:center;
+            background:#eaeaea;
+            border-top:4px solid #333;
+            padding:15px;
+          ">
+        QUARTER FINALS
+      </td>
+    </tr>
+  `;
+}
     }
 
     fixturesBody.innerHTML += `
