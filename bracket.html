@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Knockout Bracket</title>
-<link rel="stylesheet" href="bracket.css">
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family:Arial,sans-serif;
     background:#f4f4f4;
@@ -25,82 +28,142 @@ nav a{
     padding:10px 14px;
     border-radius:6px;
     margin-right:8px;
+    display:inline-block;
 }
 
 h1{
     text-align:center;
     margin-bottom:30px;
+    color:#333;
 }
 
 .wrap{
-    min-width:2600px;
+    display:inline-block;
+    min-width:100%;
 }
 
 .grid{
     display:grid;
     grid-template-columns:
-        300px
-        220px
-        220px
-        220px
-        260px
-        220px
-        220px
-        220px
-        300px;
-    gap:16px;
+        280px
+        200px
+        180px
+        180px
+        240px
+        180px
+        180px
+        200px
+        280px;
+    gap:12px;
+    padding:20px;
+    background:white;
+    border-radius:8px;
+}
+
+.col {
+    display:flex;
+    flex-direction:column;
 }
 
 .col h2{
     text-align:center;
+    font-size:14px;
+    margin:0 0 12px 0;
+    color:#333;
+    border-bottom:2px solid #24292f;
+    padding-bottom:8px;
 }
 
 .match,
 .slot,
 .champ{
     background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:10px;
+    border:2px solid #ddd;
+    border-radius:6px;
+    padding:8px;
+    margin-bottom:8px;
+    overflow:hidden;
 }
 
 .match{
-    height:92px;
-    margin-bottom:16px;
+    min-height:80px;
+}
+
+.match:hover {
+    border-color:#24292f;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 .team{
     display:flex;
     align-items:center;
-    margin:4px 0;
+    margin:3px 0;
+    font-size:12px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .team img{
-    width:24px;
-    height:18px;
-    margin-right:8px;
+    width:20px;
+    height:14px;
+    margin-right:6px;
+    border:0.5px solid #ccc;
+    flex-shrink:0;
 }
 
 .owner{
-    font-size:11px;
-    color:#666;
-    margin-left:32px;
+    font-size:10px;
+    color:#888;
+    margin-left:26px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .slot{
-    height:70px;
+    min-height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    color:#ccc;
+    background:#fafafa;
 }
 
 .champ{
     text-align:center;
-    padding:24px;
+    padding:16px 8px;
+    background:linear-gradient(135deg, #fff9e6 0%, #fffbf0 100%);
+    border:2px solid #ffc107;
 }
 
-.s1{margin-top:120px;}
-.s2{margin-top:150px;}
-.s3{margin-top:300px;}
-.s4{margin-top:520px;}
-.s5{margin-top:520px;}
+.champ h2 {
+    margin:0 0 4px 0;
+    font-size:13px;
+}
+
+.champ h1 {
+    margin:4px 0;
+    font-size:24px;
+}
+
+.s1{margin-top:60px;}
+.s2{margin-top:90px;}
+.s3{margin-top:200px;}
+.s4{margin-top:380px;}
+.s5{margin-top:360px;}
+
+@media (max-width: 1400px) {
+    .grid {
+        gap: 8px;
+    }
+    
+    .match, .slot {
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+}
 </style>
 </head>
 
