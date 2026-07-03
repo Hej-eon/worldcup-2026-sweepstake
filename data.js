@@ -313,15 +313,6 @@ const fixtures = [
   away: { name: "?", code: "", owner: "" },
   result: "",
   winner: ""
-},
-
-{
-  id: "QF-1",
-  date: "10 Jul 2026 - 8:00 PM",
-  home: { ... },
-  away: { ... },
-  result: "",
-  winner: ""
 }
 
 ];
@@ -411,23 +402,6 @@ if (fixturesBody) {
           </td>
         </tr>
       `;
-    if (fixture.id === "QF-1") {
-
-      fixturesBody.innerHTML += `
-        <tr>
-          <td colspan="3"
-              style="
-              font-weight:bold;
-              font-size:28px;
-              text-align:center;
-              background:#eaeaea;
-              border-top:4px solid #333;
-              padding:15px;
-            ">
-          QUARTER FINALS
-          </td>
-        </tr>
-  `;
 }
     }
 
