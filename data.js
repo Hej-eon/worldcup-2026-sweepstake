@@ -326,7 +326,6 @@ const fixtures = [
 
 {
   id: "QF-1",
-  ...
 }
 
 ];
@@ -437,7 +436,7 @@ if (fixturesBody) {
 
   return;
 }
-``
+
     fixturesBody.innerHTML += `
       <tr>
         <td>${fixture.date}</td>
