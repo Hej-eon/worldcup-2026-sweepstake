@@ -295,7 +295,26 @@ const fixtures = [
   away: { name: "Belgium", code: "be", owner: "Darshan" },
   result: "",
   winner: ""
+},
+
+{
+  id: "R16-7",
+  date: "07 Jul 2026 - 5:00 PM",
+  home: { name: "?", code: "", owner: "" },
+  away: { name: "?", code: "", owner: "" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "R16-7",
+  date: "07 Jul 2026 - 9:00 PM",
+  home: { name: "Switzerland", code: "ch", owner: "Krishan" },
+  away: { name: "?", code: "", owner: "" },
+  result: "",
+  winner: ""
 }
+
 ];
 
 function getFlag(team) {
