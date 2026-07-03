@@ -240,7 +240,69 @@ const fixtures = [
     result: "",
     winner: ""
   }
+,
+{
+  id: "HEADER-R16",
+  date: "ROUND OF 16",
+  home: { name: "", code: "", owner: "" },
+  away: { name: "", code: "", owner: "" },
+  result: "",
+  winner: ""
+},
 
+{
+  id: "R16-1",
+  date: "04 Jul 2026 - 6:00 PM",
+  home: { name: "Canada", code: "ca", owner: "Heja" },
+  away: { name: "Morocco", code: "ma", owner: "Darshan" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "R16-2",
+  date: "04 Jul 2026 - 10:00 PM",
+  home: { name: "Paraguay", code: "py", owner: "Karl" },
+  away: { name: "France", code: "fr", owner: "Karl" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "R16-3",
+  date: "05 Jul 2026 - 9:00 PM",
+  home: { name: "Brazil", code: "br", owner: "Karl" },
+  away: { name: "Norway", code: "no", owner: "Darshan" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "R16-4",
+  date: "06 Jul 2026 - 1:00 AM",
+  home: { name: "Mexico", code: "mx", owner: "Heja" },
+  away: { name: "England", code: "eng", owner: "Krishan" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "R16-5",
+  date: "06 Jul 2026 - 8:00 PM",
+  home: { name: "Portugal", code: "pt", owner: "Darshan" },
+  away: { name: "Spain", code: "es", owner: "Betim" },
+  result: "",
+  winner: ""
+},
+
+{
+  id: "R16-6",
+  date: "07 Jul 2026 - 1:00 AM",
+  home: { name: "USA", code: "us", owner: "Krishan" },
+  away: { name: "Belgium", code: "be", owner: "Darshan" },
+  result: "",
+  winner: ""
+}
 ];
 
 function getFlag(team) {
