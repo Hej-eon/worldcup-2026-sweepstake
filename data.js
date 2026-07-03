@@ -402,7 +402,6 @@ if (fixturesBody) {
           </td>
         </tr>
       `;
-}
     }
 
     fixturesBody.innerHTML += `
@@ -413,6 +412,7 @@ if (fixturesBody) {
           <img class="flag"
                src="${getFlag(fixture.home)}"
                alt="${fixture.home.name}">
+
           ${fixture.home.name} (${fixture.home.owner})
 
           vs
@@ -420,6 +420,7 @@ if (fixturesBody) {
           <img class="flag"
                src="${getFlag(fixture.away)}"
                alt="${fixture.away.name}">
+
           ${fixture.away.name} (${fixture.away.owner})
         </td>
 
