@@ -367,64 +367,26 @@ if (fixturesBody) {
 
   fixtures.forEach(fixture => {
 
-    if (fixture.id === "HEADER-R16") {
+    if (fixture.id === "R16-1") {
 
       fixturesBody.innerHTML += `
         <tr>
+          <td colspan="3"
+              style="
+                font-weight:bold;
+                font-size:22px;
+                text-align:center;
+                background:#f0f0f0;
+                border-top:3px solid #333;
+              ">
+            ROUND OF 16
+          </td>
+        </tr>
+      `;
     }
 
     fixturesBody.innerHTML += `
       <tr>
-
-        <td>${fixture.date}</td>
-
-        <td>
-
-          <img class="flag"
-               src="${getFlag(fixture.home)}"
-               alt="${fixture.home.name}">
-
-          ${fixture.home.name} (${fixture.home.owner})
-
-          vs
-
-          <img class="flag"
-               src="${getFlag(fixture.away)}"
-               alt="${fixture.away.name}">
-
-          ${fixture.away.name} (${fixture.away.owner})
-
-        </td>
-
-        <td>${fixture.result}</td>
-
-      </tr>
-    `;
-
-  });
-
-}
-
-    fixturesBody.innerHTML += `
-      <tr>
-        <td colspan="3"
-            style="
-              font-weight:bold;
-              font-size:22px;
-              text-align:center;
-              background:#f0f0f0;
-              border-top:3px solid #333;
-            ">
-          ROUND OF 16
-        </td>
-      </tr>
-    `;
-
-    return;
-  }
-
-  fixturesBody.innerHTML += `
-    <tr>
         <td>${fixture.date}</td>
 
         <td>
@@ -444,7 +406,9 @@ if (fixturesBody) {
         <td>${fixture.result}</td>
       </tr>
     `;
+
   });
+
 }
 
 const bracketData = {
