@@ -371,20 +371,6 @@ if (fixturesBody) {
 
       fixturesBody.innerHTML += `
         <tr>
-          <td colspan="3"
-              style="
-                font-weight:bold;
-                font-size:22px;
-                text-align:center;
-                background:#f0f0f0;
-                border-top:3px solid #333;
-              ">
-            ROUND OF 16
-          </td>
-        </tr>
-      `;
-
-      return;
     }
 
     fixturesBody.innerHTML += `
