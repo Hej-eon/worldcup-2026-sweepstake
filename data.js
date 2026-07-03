@@ -244,10 +244,6 @@ const fixtures = [
 {
   id: "HEADER-R16",
   date: "ROUND OF 16",
-  home: { name: "", code: "", owner: "" },
-  away: { name: "", code: "", owner: "" },
-  result: "",
-  winner: ""
 },
 
 {
