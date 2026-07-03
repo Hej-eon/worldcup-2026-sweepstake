@@ -192,8 +192,8 @@ const fixtures = [
     date: "02 Jul 2026 - 8:00 PM",
     home: { name: "Spain", code: "es", owner: "Betim" },
     away: { name: "Austria", code: "at", owner: "Karl" },
-    result: "",
-    winner: ""
+    result: "3-0",
+    winner: "Spain"
   },
 
   {
@@ -201,8 +201,8 @@ const fixtures = [
     date: "03 Jul 2026 - 12:00 AM",
     home: { name: "Portugal", code: "pt", owner: "Darshan" },
     away: { name: "Croatia", code: "hr", owner: "Krishan" },
-    result: "",
-    winner: ""
+    result: "2-1",
+    winner: "Portugal"
   },
 
   {
@@ -210,8 +210,8 @@ const fixtures = [
     date: "03 Jul 2026 - 4:00 AM",
     home: { name: "Switzerland", code: "ch", owner: "Krishan" },
     away: { name: "Algeria", code: "dz", owner: "Karl" },
-    result: "",
-    winner: ""
+    result: "2-0",
+    winner: "Switzerland"
   },
 
   {
