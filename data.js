@@ -92,7 +92,9 @@ const eliminatedTeams = [
   "Haiti",
   "Austria",
   "Croatia",
-  "Algeria"
+  "Algeria",
+  "Australia",
+  "Cape Verde"
 ];
 
 const fixtures = [
