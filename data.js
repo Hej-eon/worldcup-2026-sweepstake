@@ -96,6 +96,7 @@ const eliminatedTeams = [
   "Australia",
   "Cape Verde",
   "Ghana",
+  "Canada",
   ];
 
 const fixtures = [
@@ -251,7 +252,7 @@ const fixtures = [
   date: "04 Jul 2026 - 6:00 PM",
   home: { name: "Canada", code: "ca", owner: "Heja" },
   away: { name: "Morocco", code: "ma", owner: "Darshan" },
-  result: "0-2",
+  result: "0-3",
   winner: "Morocco"
 },
 
