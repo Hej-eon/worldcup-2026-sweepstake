@@ -450,17 +450,21 @@ if (fixturesBody) {
       <tr>
         <td>${fixture.date}</td>
 
-        <td>
-          getFlag(fixture.home)}"
-               alt="${fixture.home.name}">
-          ${fixture.home.name} (${fixture.home.owner})
+<td>
 
-          vs
+  "
+       alt="${fixture.home.name}">
 
-          (fixture.away)}"
-               alt="${fixture.away.name}">
-          ${fixture.away.name} (${fixture.away.owner})
-        </td>
+  ${fixture.home.name} (${fixture.home.owner})
+
+  vs
+
+  "
+       alt="${fixture.away.name}">
+
+  ${fixture.away.name} (${fixture.away.owner})
+
+</td>
 
         <td>${fixture.result}</td>
       </tr>
