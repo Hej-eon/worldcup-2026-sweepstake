@@ -95,6 +95,7 @@ const eliminatedTeams = [
   "Algeria",
   "Australia",
   "Cape Verde",
+  "Ghana",
   ];
 
 const fixtures = [
