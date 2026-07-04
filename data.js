@@ -423,44 +423,40 @@ if (fixturesBody) {
         </tr>
       `;
     }
-    
-  if (fixture.id === "QF-HEADER") {
 
-  fixturesBody.innerHTML += `
-    <tr>
-      <td colspan="3"
-          style="
-            font-weight:bold;
-            font-size:22px;
-            text-align:center;
-            background:#f0f0f0;
-            border-top:3px solid #333;
-          ">
-        QUARTER FINALS
-      </td>
-    </tr>
-  `;
+    if (fixture.id === "QF-HEADER") {
 
-  return;
-}
+      fixturesBody.innerHTML += `
+        <tr>
+          <td colspan="3"
+              style="
+                font-weight:bold;
+                font-size:22px;
+                text-align:center;
+                background:#f0f0f0;
+                border-top:3px solid #333;
+              ">
+            QUARTER FINALS
+          </td>
+        </tr>
+      `;
+
+      return;
+    }
 
     fixturesBody.innerHTML += `
       <tr>
         <td>${fixture.date}</td>
 
         <td>
-          <img class="flag"
-               src="${getFlag(fixture.home)}"
+          getFlag(fixture.home)}"
                alt="${fixture.home.name}">
-
           ${fixture.home.name} (${fixture.home.owner})
 
           vs
 
-          <img class="flag"
-               src="${getFlag(fixture.away)}"
+          (fixture.away)}"
                alt="${fixture.away.name}">
-
           ${fixture.away.name} (${fixture.away.owner})
         </td>
 
@@ -471,7 +467,6 @@ if (fixturesBody) {
   });
 
 }
-
 const bracketData = {
 
   leftSide: [
