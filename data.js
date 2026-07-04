@@ -328,7 +328,7 @@ const fixtures = [
 },
 
 {
-  id: "QF-1",
+  id: "qf-1",
   date: "TBC",
   home: { name: "TBC", code: "", owner: "" },
   away: { name: "Morocco", code: "ma", owner: "Darshan" },
