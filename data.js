@@ -655,3 +655,28 @@ const roundOf16 = [
   }
 
 ];
+
+const quarterFinals = [
+  {
+    home: getWinner("R16-1"),
+    away: getWinner("R16-2")
+  },
+  {
+    home: getWinner("R16-3"),
+    away: getWinner("R16-4")
+  },
+  {
+    home: getWinner("R16-5"),
+    away: getWinner("R16-6")
+  },
+  {
+    home: getWinner("R16-7"),
+    away: getWinner("R16-8")
+  }
+];
+
+
+
+
+
+
