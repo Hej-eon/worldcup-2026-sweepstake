@@ -92,7 +92,9 @@ const eliminatedTeams = [
   "Haiti",
   "Austria",
   "Croatia",
-  "Algeria"
+  "Algeria",
+  "Australia",
+  "Cape Verde"
 ];
 
 const fixtures = [
@@ -219,8 +221,8 @@ const fixtures = [
     date: "03 Jul 2026 - 7:00 PM",
     home: { name: "Australia", code: "au", owner: "Krishan" },
     away: { name: "Egypt", code: "eg", owner: "Darshan" },
-    result: "",
-    winner: ""
+    result: "1-1 (Egypt Pens)",
+    winner: "Egypt"
   },
 
   {
@@ -228,8 +230,8 @@ const fixtures = [
     date: "03 Jul 2026 - 11:00 PM",
     home: { name: "Argentina", code: "ar", owner: "Darshan" },
     away: { name: "Cape Verde", code: "cv", owner: "Betim" },
-    result: "",
-    winner: ""
+    result: "3-2",
+    winner: "Argentina"
   },
 
   {
@@ -237,8 +239,8 @@ const fixtures = [
     date: "04 Jul 2026 - 2:30 AM",
     home: { name: "Colombia", code: "co", owner: "Krishan" },
     away: { name: "Ghana", code: "gh", owner: "Darshan" },
-    result: "",
-    winner: ""
+    result: "1-0",
+    winner: "Colombia"
   }
 ,
 
@@ -300,8 +302,8 @@ const fixtures = [
 {
   id: "R16-7",
   date: "07 Jul 2026 - 5:00 PM",
-  home: { name: "?", code: "", owner: "" },
-  away: { name: "?", code: "", owner: "" },
+  home: { name: "Argentina", code: "ar", owner: "Darshan" },
+  away: { name: "Egypt", code: "eg", owner: "Darshan" },
   result: "",
   winner: ""
 },
@@ -310,7 +312,7 @@ const fixtures = [
   id: "R16-8",
   date: "07 Jul 2026 - 9:00 PM",
   home: { name: "Switzerland", code: "ch", owner: "Krishan" },
-  away: { name: "?", code: "", owner: "" },
+  away: { name: "Colombia", code: "co", owner: "Krishan" },
   result: "",
   winner: ""
 },
