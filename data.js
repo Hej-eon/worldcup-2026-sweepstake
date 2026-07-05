@@ -331,8 +331,8 @@ const fixtures = [
 
 {
   id: "qf-1",
-  date: "TBC",
-  home: { name: "TBC", code: "", owner: "" },
+  date: "09 July 2026 - 9:00 PM",
+  home: { name: "France", code: "fr", owner: "Karl" },
   away: { name: "Morocco", code: "ma", owner: "Darshan" },
   result: "",
   winner: ""
