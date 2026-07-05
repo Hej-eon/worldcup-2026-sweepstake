@@ -98,10 +98,9 @@ const eliminatedTeams = [
   "Ghana",
   "Canada",
   "Paraguay",
-  ];
+];
 
 const fixtures = [
-
   {
     id: "R32-3",
     date: "28 Jun 2026 - 8:00 PM",
@@ -244,100 +243,97 @@ const fixtures = [
     away: { name: "Ghana", code: "gh", owner: "Darshan" },
     result: "1-0",
     winner: "Colombia"
+  },
+
+  {
+    id: "R16-1",
+    date: "04 Jul 2026 - 6:00 PM",
+    home: { name: "Canada", code: "ca", owner: "Heja" },
+    away: { name: "Morocco", code: "ma", owner: "Darshan" },
+    result: "0-3",
+    winner: "Morocco"
+  },
+
+  {
+    id: "R16-2",
+    date: "04 Jul 2026 - 10:00 PM",
+    home: { name: "Paraguay", code: "py", owner: "Karl" },
+    away: { name: "France", code: "fr", owner: "Karl" },
+    result: "0-1",
+    winner: "France"
+  },
+
+  {
+    id: "R16-3",
+    date: "05 Jul 2026 - 9:00 PM",
+    home: { name: "Brazil", code: "br", owner: "Karl" },
+    away: { name: "Norway", code: "no", owner: "Darshan" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R16-4",
+    date: "06 Jul 2026 - 1:00 AM",
+    home: { name: "Mexico", code: "mx", owner: "Heja" },
+    away: { name: "England", code: "eng", owner: "Krishan" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R16-5",
+    date: "06 Jul 2026 - 8:00 PM",
+    home: { name: "Portugal", code: "pt", owner: "Darshan" },
+    away: { name: "Spain", code: "es", owner: "Betim" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R16-6",
+    date: "07 Jul 2026 - 1:00 AM",
+    home: { name: "USA", code: "us", owner: "Krishan" },
+    away: { name: "Belgium", code: "be", owner: "Darshan" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R16-7",
+    date: "07 Jul 2026 - 5:00 PM",
+    home: { name: "Argentina", code: "ar", owner: "Darshan" },
+    away: { name: "Egypt", code: "eg", owner: "Darshan" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "R16-8",
+    date: "07 Jul 2026 - 9:00 PM",
+    home: { name: "Switzerland", code: "ch", owner: "Krishan" },
+    away: { name: "Colombia", code: "co", owner: "Krishan" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "QF-HEADER",
+    date: "QUARTER FINALS",
+    home: { name: "", code: "", owner: "" },
+    away: { name: "", code: "", owner: "" },
+    result: "",
+    winner: ""
+  },
+
+  {
+    id: "qf-1",
+    date: "TBC",
+    home: { name: "TBC", code: "", owner: "" },
+    away: { name: "Morocco", code: "ma", owner: "Darshan" },
+    result: "",
+    winner: ""
   }
-,
-
-
-{
-  id: "R16-1",
-  date: "04 Jul 2026 - 6:00 PM",
-  home: { name: "Canada", code: "ca", owner: "Heja" },
-  away: { name: "Morocco", code: "ma", owner: "Darshan" },
-  result: "0-3",
-  winner: "Morocco"
-},
-
-{
-  id: "R16-2",
-  date: "04 Jul 2026 - 10:00 PM",
-  home: { name: "Paraguay", code: "py", owner: "Karl" },
-  away: { name: "France", code: "fr", owner: "Karl" },
-  result: "0-1",
-  winner: "France"
-},
-
-{
-  id: "R16-3",
-  date: "05 Jul 2026 - 9:00 PM",
-  home: { name: "Brazil", code: "br", owner: "Karl" },
-  away: { name: "Norway", code: "no", owner: "Darshan" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "R16-4",
-  date: "06 Jul 2026 - 1:00 AM",
-  home: { name: "Mexico", code: "mx", owner: "Heja" },
-  away: { name: "England", code: "eng", owner: "Krishan" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "R16-5",
-  date: "06 Jul 2026 - 8:00 PM",
-  home: { name: "Portugal", code: "pt", owner: "Darshan" },
-  away: { name: "Spain", code: "es", owner: "Betim" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "R16-6",
-  date: "07 Jul 2026 - 1:00 AM",
-  home: { name: "USA", code: "us", owner: "Krishan" },
-  away: { name: "Belgium", code: "be", owner: "Darshan" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "R16-7",
-  date: "07 Jul 2026 - 5:00 PM",
-  home: { name: "Argentina", code: "ar", owner: "Darshan" },
-  away: { name: "Egypt", code: "eg", owner: "Darshan" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "R16-8",
-  date: "07 Jul 2026 - 9:00 PM",
-  home: { name: "Switzerland", code: "ch", owner: "Krishan" },
-  away: { name: "Colombia", code: "co", owner: "Krishan" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "QF-HEADER",
-  date: "QUARTER FINALS",
-  home: { name: "", code: "", owner: "" },
-  away: { name: "", code: "", owner: "" },
-  result: "",
-  winner: ""
-},
-
-{
-  id: "qf-1",
-  date: "09 July 2026 - 9:00 PM",
-  home: { name: "France", code: "fr", owner: "Karl" },
-  away: { name: "Morocco", code: "ma", owner: "Darshan" },
-  result: "",
-  winner: ""
-}
-
 ];
 
 function getFlag(team) {
@@ -352,57 +348,6 @@ function getFlag(team) {
   return `https://flagcdn.com/w40/${team.code}.png`;
 }
 
-const standingsBody = document.querySelector("#standings tbody");
-const teamsContainer = document.getElementById("teams");
-const eliminatedList = document.getElementById("eliminated");
-
-if (standingsBody && teamsContainer && eliminatedList) {
-
-  Object.entries(sweepstake)
-    .map(([player, teams]) => {
-      const remaining = teams.filter(
-        team => !eliminatedTeams.includes(team.name)
-      ).length;
-
-      return { player, teams, remaining };
-    })
-    .sort((a, b) => b.remaining - a.remaining)
-    .forEach(item => {
-
-      standingsBody.innerHTML += `
-        <tr>
-          <td>${item.player}</td>
-          <td>${item.remaining}</td>
-        </tr>
-      `;
-
-      let teamsHtml = "";
-
-      item.teams.forEach(team => {
-
-        const eliminated = eliminatedTeams.includes(team.name);
-
-        teamsHtml += `
-          <div class="team ${eliminated ? "eliminated" : ""}">
-            <img class="flag" src="${getFlag(team)}" alt="${team.name}">
-            ${team.name}
-          </div>
-        `;
-      });
-
-      teamsContainer.innerHTML += `
-        <div class="player-card">
-          <h3>${item.player} (${item.remaining})</h3>
-          ${teamsHtml}
-        </div>
-      `;
-    });
-
-  eliminatedTeams.forEach(team => {
-    eliminatedList.innerHTML += `<li>${team}</li>`;
-  });
-}
-
 const fixturesBody = document.querySelector("#fixtures tbody");
 
 if (fixturesBody) {
@@ -410,7 +355,6 @@ if (fixturesBody) {
   fixtures.forEach(fixture => {
 
     if (fixture.id === "R16-1") {
-
       fixturesBody.innerHTML += `
         <tr>
           <td colspan="3"
@@ -428,7 +372,6 @@ if (fixturesBody) {
     }
 
     if (fixture.id === "QF-HEADER") {
-
       fixturesBody.innerHTML += `
         <tr>
           <td colspan="3"
@@ -443,7 +386,6 @@ if (fixturesBody) {
           </td>
         </tr>
       `;
-
       return;
     }
 
@@ -451,153 +393,21 @@ if (fixturesBody) {
       <tr>
         <td>${fixture.date}</td>
 
-<td>
+        <td>
+          <img src="${getFlag(fixture.home)}" alt="${fixture.home.name}" style="width:22px; margin-right:6px;">
+          ${fixture.home.name} (${fixture.home.owner})
+          &nbsp;vs&nbsp;
+          <img src="${getFlag(fixture.away)}" alt="${fixture.away.name}" style="width:22px; margin-right:6px;">
+          ${fixture.away.name} (${fixture.away.owner})
+        </td>
 
-  ${getFlag(fixture.home)}
-
-  ${fixture.home.name} (${fixture.home.owner})
-
-  vs
-
-  getFlag(fixture.away)}"
-       alt="${fixture.away.name}">
-
-  ${fixture.away.name} (${fixture.away.owner})
-
-</td>
         <td>${fixture.result}</td>
       </tr>
     `;
-
   });
-
 }
-const bracketData = {
-
-  leftSide: [
-
-    {
-      id: "R32-1",
-      home: { name: "Germany", code: "de", owner: "Heja" },
-      away: { name: "Paraguay", code: "py", owner: "Karl" },
-      winner: "Paraguay",
-    },
-
-    {
-      id: "R32-2",
-      home: { name: "France", code: "fr", owner: "Karl" },
-      away: { name: "Sweden", code: "se", owner: "Betim" },
-      winner: "France",
-    },
-
-    {
-      id: "R32-3",
-      home: { name: "South Africa", code: "za", owner: "Darshan" },
-      away: { name: "Canada", code: "ca", owner: "Heja" },
-      winner: ""
-    },
-
-    {
-      id: "R32-4",
-      home: { name: "Netherlands", code: "nl", owner: "Betim" },
-      away: { name: "Morocco", code: "ma", owner: "Darshan" },
-      winner: ""
-    },
-
-    {
-      id: "R32-5",
-      home: { name: "Portugal", code: "pt", owner: "Darshan" },
-      away: { name: "Croatia", code: "hr", owner: "Krishan" },
-      winner: ""
-    },
-
-    {
-      id: "R32-6",
-      home: { name: "Spain", code: "es", owner: "Betim" },
-      away: { name: "Austria", code: "at", owner: "Karl" },
-      winner: ""
-    },
-
-    {
-      id: "R32-7",
-      home: { name: "USA", code: "us", owner: "Krishan" },
-      away: { name: "Bosnia", code: "ba", owner: "Betim" },
-      winner: ""
-    },
-
-    {
-      id: "R32-8",
-      home: { name: "Belgium", code: "be", owner: "Darshan" },
-      away: { name: "Senegal", code: "sn", owner: "Karl" },
-      winner: ""
-    }
-
-  ],
-
-  rightSide: [
-
-    {
-      id: "R32-9",
-      home: { name: "Brazil", code: "br", owner: "Karl" },
-      away: { name: "Japan", code: "jp", owner: "Heja" },
-      winner: ""
-    },
-
-    {
-      id: "R32-10",
-      home: { name: "Ivory Coast", code: "ci", owner: "Betim" },
-      away: { name: "Norway", code: "no", owner: "Darshan" },
-      winner: ""
-    },
-
-    {
-      id: "R32-11",
-      home: { name: "Mexico", code: "mx", owner: "Heja" },
-      away: { name: "Ecuador", code: "ec", owner: "Darshan" },
-      winner: ""
-    },
-
-    {
-      id: "R32-12",
-      home: { name: "England", code: "eng", owner: "Krishan" },
-      away: { name: "DR Congo", code: "cd", owner: "Heja" },
-      winner: ""
-    },
-
-    {
-      id: "R32-13",
-      home: { name: "Argentina", code: "ar", owner: "Darshan" },
-      away: { name: "Cape Verde", code: "cv", owner: "Betim" },
-      winner: ""
-    },
-
-    {
-      id: "R32-14",
-      home: { name: "Australia", code: "au", owner: "Krishan" },
-      away: { name: "Egypt", code: "eg", owner: "Darshan" },
-      winner: ""
-    },
-
-    {
-      id: "R32-15",
-      home: { name: "Switzerland", code: "ch", owner: "Krishan" },
-      away: { name: "Algeria", code: "dz", owner: "Karl" },
-      winner: ""
-    },
-
-    {
-      id: "R32-16",
-      home: { name: "Colombia", code: "co", owner: "Krishan" },
-      away: { name: "Ghana", code: "gh", owner: "Darshan" },
-      winner: ""
-    }
-
-  ]
-
-};
 
 function getWinner(matchId) {
-
   const match = fixtures.find(f => f.id === matchId);
 
   if (!match || !match.winner) {
@@ -612,47 +422,38 @@ function getWinner(matchId) {
 }
 
 const roundOf16 = [
-
   {
     home: getWinner("R32-1"),
     away: getWinner("R32-2")
   },
-
   {
     home: getWinner("R32-3"),
     away: getWinner("R32-4")
   },
-
   {
     home: getWinner("R32-5"),
     away: getWinner("R32-6")
   },
-
   {
     home: getWinner("R32-7"),
     away: getWinner("R32-8")
   },
-
   {
     home: getWinner("R32-9"),
     away: getWinner("R32-10")
   },
-
   {
     home: getWinner("R32-11"),
     away: getWinner("R32-12")
   },
-
   {
     home: getWinner("R32-13"),
     away: getWinner("R32-14")
   },
-
   {
     home: getWinner("R32-15"),
     away: getWinner("R32-16")
   }
-
 ];
 
 const quarterFinals = [
@@ -665,17 +466,4 @@ const quarterFinals = [
     away: getWinner("R16-4")
   },
   {
-    home: getWinner("R16-5"),
-    away: getWinner("R16-6")
-  },
-  {
-    home: getWinner("R16-7"),
-    away: getWinner("R16-8")
-  }
-];
-
-
-
-
-
-
+    home: getWinner
