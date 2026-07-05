@@ -262,8 +262,8 @@ const fixtures = [
   date: "04 Jul 2026 - 10:00 PM",
   home: { name: "Paraguay", code: "py", owner: "Karl" },
   away: { name: "France", code: "fr", owner: "Karl" },
-  result: "",
-  winner: ""
+  result: "0-1",
+  winner: "France"
 },
 
 {
