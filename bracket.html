@@ -325,80 +325,42 @@ h1{
 
 <script>
 
+function getFlag(team) {
+    return team.flag;
+}
+
 roundOf16.forEach((match, index) => {
+    const slot = document.getElementById(`r16-${index + 1}`);
+    if (!slot) return;
 
-    const slot =
-        document.getElementById(`r16-${index + 1}`);
+    slot.innerHTML = `
+        <div class="team">
+            ${match.home ? `<img src="${getFlag(match.home)}"> ${match.home.name}` : "?"}
+        </div>
+        <div class="owner">${match.home ? match.home.owner : ""}</div>
 
-    if(slot){
-
-slot.innerHTML = `
-<div class="team">
-    ${
-      match.home
-      ? `<img src="${getFlag(match.home)}">
-         ${match.home.name}`
-      : "?"
-    }
-</div>
-
-<div class="owner">
-    ${match.home ? match.home.owner : ""}
-</div>
-
-<div class="team">
-    ${
-      match.away
-      ? `<img src="${getFlag(match.away)}">
-         ${match.away.name}`
-      : "?"
-    }
-</div>
-
-<div class="owner">
-    ${match.away ? match.away.owner : ""}
-</div>
-`;
-    }
-
+        <div class="team">
+            ${match.away ? `<img src="${getFlag(match.away)}"> ${match.away.name}` : "?"}
+        </div>
+        <div class="owner">${match.away ? match.away.owner : ""}</div>
+    `;
 });
 
-    quarterFinals.forEach((match, index) => {
+quarterFinals.forEach((match, index) => {
+    const slot = document.getElementById(`qf-${index + 1}`);
+    if (!slot) return;
 
-    const slot =
-        document.getElementById(`qf-${index + 1}`);
+    slot.innerHTML = `
+        <div class="team">
+            ${match.home ? `<img src="${getFlag(match.home)}"> ${match.home.name}` : "?"}
+        </div>
+        <div class="owner">${match.home ? match.home.owner : ""}</div>
 
-    if(slot){
-
-        slot.innerHTML = `
-<div class="team">
-    ${
-      match.home
-      ? `${getFlag(match.home)}
-         ${match.home.name}`
-      : "?"
-    }
-</div>
-
-<div class="owner">
-    ${match.home ? match.home.owner : ""}
-</div>
-
-<div class="team">
-    ${
-      match.away
-      ? `${getFlag(match.away)}
-         ${match.away.name}`
-      : "?"
-    }
-</div>
-
-<div class="owner">
-    ${match.away ? match.away.owner : ""}
-</div>
-`;
-    }
-
+        <div class="team">
+            ${match.away ? `<img src="${getFlag(match.away)}"> ${match.away.name}` : "?"}
+        </div>
+        <div class="owner">${match.away ? match.away.owner : ""}</div>
+    `;
 });
 
 </script>
