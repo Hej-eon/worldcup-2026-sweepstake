@@ -267,7 +267,7 @@ const fixtures = [
   {
     id: "R16-3",
     date: "05 Jul 2026 - 9:00 PM",
-    home: { name: "Brazil", owner: "Karl" },
+    home: { name: "Brazil", code: "br", owner: "Karl" },
     away: { name: "Norway", code: "no", owner: "Darshan" },
     result: "0-2",
     winner: "Norway"
@@ -330,7 +330,7 @@ const fixtures = [
   {
     id: "qf-1",
     date: "TBC",
-    home: { name: "TBC", code: "", owner: "" },
+    home: { name: "France", code: "fr", owner: "Karl" },
     away: { name: "Morocco", code: "ma", owner: "Darshan" },
     result: "",
     winner: ""
