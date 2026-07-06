@@ -100,7 +100,7 @@ const fixtures = [
 
   { id:"QF-HEADER", date:"QUARTER FINALS", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
 
-  { id:"qf-1", date:"09 July 2026 - 9:00P PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Morocco",code:"ma",owner:"Darshan"}, result:"", winner:"" }
+  { id:"qf-1", date:"09 July 2026 - 9:00P PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Morocco",code:"ma",owner:"Darshan"}, result:"", winner:"" },
   { id:"qf-2", date:"11 July 2026 - 10:00 PM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" }
 ];
 
