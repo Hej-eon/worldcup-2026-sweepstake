@@ -98,6 +98,7 @@ const eliminatedTeams = [
   "Ghana",
   "Canada",
   "Paraguay",
+  "Brazil",
 ];
 
 const fixtures = [
@@ -266,10 +267,10 @@ const fixtures = [
   {
     id: "R16-3",
     date: "05 Jul 2026 - 9:00 PM",
-    home: { name: "Brazil", code: "br", owner: "Karl" },
+    home: { name: "Brazil", owner: "Karl" },
     away: { name: "Norway", code: "no", owner: "Darshan" },
-    result: "",
-    winner: ""
+    result: "0-2",
+    winner: "Norway"
   },
 
   {
