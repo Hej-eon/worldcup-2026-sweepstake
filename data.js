@@ -170,3 +170,61 @@ const quarterFinals = [
   { home:getWinner("R16-5"), away:getWinner("R16-6") },
   { home:getWinner("R16-7"), away:getWinner("R16-8") }
 ];
+
+// ------------------------------
+// SWEEPSTAKE PAGE RENDERING
+// ------------------------------
+
+const standingsBody = document.querySelector("#standings tbody");
+const teamsContainer = document.getElementById("teams");
+const eliminatedList = document.getElementById("eliminated");
+
+// Only run if we are on the sweepstake page
+if (standingsBody && teamsContainer && eliminatedList) {
+
+  // Build standings (count teams left)
+  Object.keys(sweepstake).forEach(player => {
+    const teamsLeft = sweepstake[player].filter(
+      team => !eliminatedTeams.includes(team.name)
+    ).length;
+
+    standingsBody.innerHTML += `
+      <tr>
+        <td>${player}</td>
+        <td>${teamsLeft}</td>
+      </tr>
+    `;
+  });
+
+  // Build teams list
+  Object.keys(sweepstake).forEach(player => {
+    const section = document.createElement("div");
+    section.className = "player-section";
+
+    section.innerHTML = `
+      <h3>${player}</h3>
+      <ul>
+        ${sweepstake[player]
+          .map(team => {
+            const eliminated = eliminatedTeams.includes(team.name);
+            return `
+              <li style="${eliminated ? "opacity:0.4;" : ""}">
+                <img src="${getFlag(team)}" style="width:22px;margin-right:6px;">
+                ${team.name}
+                ${eliminated ? "❌" : "✔️"}
+              </li>
+            `;
+          })
+          .join("")}
+      </ul>
+    `;
+
+    teamsContainer.appendChild(section);
+  });
+
+  // Build eliminated teams list
+  eliminatedTeams.forEach(team => {
+    eliminatedList.innerHTML += `<li>${team}</li>`;
+  });
+}
+
