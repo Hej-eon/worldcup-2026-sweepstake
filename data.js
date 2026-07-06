@@ -102,7 +102,8 @@ const fixtures = [
 
   { id:"qf-1", date:"09 July 2026 - 9:00 PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Morocco",code:"ma",owner:"Darshan"}, result:"", winner:"" },
   { id:"qf-2", date:"10 July 2026 - 8:00 PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Morocco",code:"ma",owner:"Darshan"}, result:"", winner:"" },
-  { id:"qf-3", date:"11 July 2026 - 10:00 PM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" }
+  { id:"qf-3", date:"11 July 2026 - 10:00 PM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" },
+  { id:"qf-4", date:"12 July 2026 - 2:00 AM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" }
 ];
 
 function getFlag(team) {
