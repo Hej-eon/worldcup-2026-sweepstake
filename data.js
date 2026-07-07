@@ -68,7 +68,7 @@ const eliminatedTeams = [
   "Ivory Coast","Sweden","Panama","Czech Republic","Netherlands","South Africa",
   "Ecuador","Uzbekistan","Turkey","Curacao","Uruguay","DR Congo","Scotland",
   "Germany","Japan","Qatar","Saudi Arabia","Haiti","Austria","Croatia","Algeria",
-  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico"
+  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA"
 ];
 
 const fixtures = [
@@ -93,8 +93,8 @@ const fixtures = [
   { id:"R16-2", date:"04 Jul 2026 - 10:00 PM", home:{name:"Paraguay",code:"py",owner:"Karl"}, away:{name:"France",code:"fr",owner:"Karl"}, result:"0-1", winner:"France" },
   { id:"R16-3", date:"05 Jul 2026 - 9:00 PM", home:{name:"Brazil",code:"br",owner:"Karl"}, away:{name:"Norway",code:"no",owner:"Darshan"}, result:"0-2", winner:"Norway" },
   { id:"R16-4", date:"06 Jul 2026 - 1:00 AM", home:{name:"Mexico",code:"mx",owner:"Heja"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"2-3", winner:"England" },
-  { id:"R16-5", date:"06 Jul 2026 - 8:00 PM", home:{name:"Portugal",code:"pt",owner:"Darshan"}, away:{name:"Spain",code:"es",owner:"Betim"}, result:"", winner:"" },
-  { id:"R16-6", date:"07 Jul 2026 - 1:00 AM", home:{name:"USA",code:"us",owner:"Krishan"}, away:{name:"Belgium",code:"be",owner:"Darshan"}, result:"", winner:"" },
+  { id:"R16-5", date:"06 Jul 2026 - 8:00 PM", home:{name:"Portugal",code:"pt",owner:"Darshan"}, away:{name:"Spain",code:"es",owner:"Betim"}, result:"0-1", winner:"Spain" },
+  { id:"R16-6", date:"07 Jul 2026 - 1:00 AM", home:{name:"USA",code:"us",owner:"Krishan"}, away:{name:"Belgium",code:"be",owner:"Darshan"}, result:"1-4", winner:"Belgium" },
   { id:"R16-7", date:"07 Jul 2026 - 5:00 PM", home:{name:"Argentina",code:"ar",owner:"Darshan"}, away:{name:"Egypt",code:"eg",owner:"Darshan"}, result:"", winner:"" },
   { id:"R16-8", date:"07 Jul 2026 - 9:00 PM", home:{name:"Switzerland",code:"ch",owner:"Krishan"}, away:{name:"Colombia",code:"co",owner:"Krishan"}, result:"", winner:"" },
 
