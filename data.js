@@ -68,7 +68,7 @@ const eliminatedTeams = [
   "Ivory Coast","Sweden","Panama","Czech Republic","Netherlands","South Africa",
   "Ecuador","Uzbekistan","Turkey","Curacao","Uruguay","DR Congo","Scotland",
   "Germany","Japan","Qatar","Saudi Arabia","Haiti","Austria","Croatia","Algeria",
-  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA"
+  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA", "Egypt", "Colombia"
 ];
 
 const fixtures = [
@@ -95,15 +95,15 @@ const fixtures = [
   { id:"R16-4", date:"06 Jul 2026 - 1:00 AM", home:{name:"Mexico",code:"mx",owner:"Heja"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"2-3", winner:"England" },
   { id:"R16-5", date:"06 Jul 2026 - 8:00 PM", home:{name:"Portugal",code:"pt",owner:"Darshan"}, away:{name:"Spain",code:"es",owner:"Betim"}, result:"0-1", winner:"Spain" },
   { id:"R16-6", date:"07 Jul 2026 - 1:00 AM", home:{name:"USA",code:"us",owner:"Krishan"}, away:{name:"Belgium",code:"be",owner:"Darshan"}, result:"1-4", winner:"Belgium" },
-  { id:"R16-7", date:"07 Jul 2026 - 5:00 PM", home:{name:"Argentina",code:"ar",owner:"Darshan"}, away:{name:"Egypt",code:"eg",owner:"Darshan"}, result:"", winner:"" },
-  { id:"R16-8", date:"07 Jul 2026 - 9:00 PM", home:{name:"Switzerland",code:"ch",owner:"Krishan"}, away:{name:"Colombia",code:"co",owner:"Krishan"}, result:"", winner:"" },
+  { id:"R16-7", date:"07 Jul 2026 - 5:00 PM", home:{name:"Argentina",code:"ar",owner:"Darshan"}, away:{name:"Egypt",code:"eg",owner:"Darshan"}, result:"3-2", winner:"Argentina" },
+  { id:"R16-8", date:"07 Jul 2026 - 9:00 PM", home:{name:"Switzerland",code:"ch",owner:"Krishan"}, away:{name:"Colombia",code:"co",owner:"Krishan"}, result:"0-0 (Switzerland Pens)", winner:"Switzerland" },
 
   { id:"QF-HEADER", date:"QUARTER FINALS", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
 
   { id:"qf-1", date:"09 July 2026 - 9:00 PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Morocco",code:"ma",owner:"Darshan"}, result:"", winner:"" },
   { id:"qf-2", date:"10 July 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"Belgium",code:"be",owner:"Darshan"}, result:"", winner:"" },
   { id:"qf-3", date:"11 July 2026 - 10:00 PM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" },
-  { id:"qf-4", date:"12 July 2026 - 2:00 AM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" }
+  { id:"qf-4", date:"12 July 2026 - 2:00 AM", home:{name:"Argentina",code:"ar",owner:"Darshan"}, away:{name:"Switzerland",code:"ch",owner:"Krishan"}, result:"", winner:"" }
 ];
 
 function getFlag(team) {
