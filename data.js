@@ -103,7 +103,17 @@ const fixtures = [
   { id:"qf-1", date:"09 July 2026 - 9:00 PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Morocco",code:"ma",owner:"Darshan"}, result:"2-0", winner:"France" },
   { id:"qf-2", date:"10 July 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"Belgium",code:"be",owner:"Darshan"}, result:"", winner:"" },
   { id:"qf-3", date:"11 July 2026 - 10:00 PM", home:{name:"Norway",code:"no",owner:"Darshan"}, away:{name:"England",code:"eng",owner:"Krishan"}, result:"", winner:"" },
-  { id:"qf-4", date:"12 July 2026 - 2:00 AM", home:{name:"Argentina",code:"ar",owner:"Darshan"}, away:{name:"Switzerland",code:"ch",owner:"Krishan"}, result:"", winner:"" }
+  { id:"qf-4", date:"12 July 2026 - 2:00 AM", home:{name:"Argentina",code:"ar",owner:"Darshan"}, away:{name:"Switzerland",code:"ch",owner:"Krishan"}, result:"", winner:"" },
+
+{ id:"SF-HEADER", date:"SEMI FINALS", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
+
+{ id:"sf-1", date:"14 Jul 2026 - 8:00 PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"TBC",code:"",owner:""}, result:"", winner:"" },
+{ id:"sf-2", date:"15 Jul 2026 - 8:00 PM", home:{name:"TBC",code:"",owner:""}, away:{name:"TBC",code:"",owner:""}, result:"", winner:"" },
+  
+{ id:"FINAL-HEADER", date:"FINAL", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
+  
+{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"TBC",code:"",owner:""}, away:{name:"TBC",code:"",owner:""}, result:"", winner:"" }
+  
 ];
 
 function getFlag(team) {
