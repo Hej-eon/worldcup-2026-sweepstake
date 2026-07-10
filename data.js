@@ -206,6 +206,18 @@ const quarterFinals = [
   { home:getWinner("R16-7"), away:getWinner("R16-8") }
 ];
 
+const semiFinals = [
+  {
+    home: getWinner("qf-1"),
+    away: getWinner("qf-2")
+  },
+  {
+    home: getWinner("qf-3"),
+    away: getWinner("qf-4")
+  }
+];
+
+
 // ------------------------------
 // SWEEPSTAKE PAGE RENDERING
 // ------------------------------
