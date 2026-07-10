@@ -374,17 +374,14 @@ quarterFinals.forEach((match, index) => {
 });
 
 semiFinals.forEach((match, index) => {
-
-    const slot =
-        document.getElementById(`sf-${index + 1}`);
-
+    const slot = document.getElementById(`sf-${index + 1}`);
     if (!slot) return;
 
     slot.innerHTML = `
         <div class="team">
             ${
               match.home
-              ? ${match.home.name}`
+              ? `getFlag(match.home)}"> ${match.home.name}`
               : "?"
             }
         </div>
@@ -405,7 +402,6 @@ semiFinals.forEach((match, index) => {
             ${match.away ? match.away.owner : ""}
         </div>
     `;
-
 });
     
 
