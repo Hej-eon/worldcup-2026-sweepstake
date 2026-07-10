@@ -145,6 +145,28 @@ if (fixturesBody) {
       return;
     }
 
+    if (fixture.id === "SF-HEADER") {
+  fixturesBody.innerHTML += `
+    <tr>
+      <td colspan="3"
+          style="font-weight:bold;font-size:22px;text-align:center;background:#f0f0f0;border-top:3px solid #333;">
+        SEMI FINALS
+      </td>
+    </tr>`;
+  return;
+}
+
+    if (fixture.id === "FINAL-HEADER") {
+  fixturesBody.innerHTML += `
+    <tr>
+      <td colspan="3"
+          style="font-weight:bold;font-size:22px;text-align:center;background:#f0f0f0;border-top:3px solid #333;">
+        FINAL
+      </td>
+    </tr>`;
+  return;
+}
+
     fixturesBody.innerHTML += `
       <tr>
         <td>${fixture.date}</td>
