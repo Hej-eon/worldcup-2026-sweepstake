@@ -382,24 +382,24 @@ semiFinals.forEach((match, index) => {
 
     slot.innerHTML = `
         <div class="team">
-    ${
-      match.home
-      ? `${getFlag(match.home)} ${match.home.name}`
-      : "?"
-    }
-</div>
+            ${
+              match.home
+              ? `"> ${match.home.name}`
+              : "?"
+            }
+        </div>
 
         <div class="owner">
             ${match.home ? match.home.owner : ""}
         </div>
 
         <div class="team">
-    ${
-      match.away
-      ? `${getFlag(match.away)} ${match.away.name}`
-      : "?"
-    }
-</div>
+            ${
+              match.away
+              ? `${getFlag(match.away)} ${match.away.name}`
+              : "?"
+            }
+        </div>
 
         <div class="owner">
             ${match.away ? match.away.owner : ""}
