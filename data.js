@@ -68,7 +68,7 @@ const eliminatedTeams = [
   "Ivory Coast","Sweden","Panama","Czech Republic","Netherlands","South Africa",
   "Ecuador","Uzbekistan","Turkey","Curacao","Uruguay","DR Congo","Scotland",
   "Germany","Japan","Qatar","Saudi Arabia","Haiti","Austria","Croatia","Algeria",
-  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA", "Egypt", "Colombia", "Morocca"
+  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA", "Egypt", "Colombia", "Morocco"
 ];
 
 const fixtures = [
