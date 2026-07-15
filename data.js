@@ -110,9 +110,9 @@ const fixtures = [
 { id:"sf-1", date:"14 Jul 2026 - 8:00 PM", home:{name:"France",code:"fr",owner:"Karl"}, away:{name:"Spain",code:"es",owner:"Betim"}, result:"0-2", winner:"Spain" },
 { id:"sf-2", date:"15 Jul 2026 - 8:00 PM", home:{name:"England",code:"eng",owner:"Krishan"}, away:{name:"Argentina",code:"ar",owner:"Darshan"}, result:"", winner:"" },
   
-{ id:"FINAL-HEADER", date:"FINAL", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
+{ id:"FINAL-HEADER", date:"FINAL", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
   
-{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"TBC",code:"",owner:""}, away:{name:"TBC",code:"",owner:""}, result:"", winner:"" }
+{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"TBC",code:"",owner:""}, result:"", winner:"" }
   
 ];
 
