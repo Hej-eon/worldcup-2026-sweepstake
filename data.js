@@ -112,7 +112,7 @@ const fixtures = [
   
 { id:"FINAL-HEADER", date:"FINAL", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
   
-{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"ARgentina",code:"ar",owner:"Darshan"}, result:"", winner:"" }
+{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"Argentina",code:"ar",owner:"Darshan"}, result:"", winner:"" }
   
 ];
 
@@ -214,6 +214,13 @@ const semiFinals = [
   {
     home: getWinner("qf-3"),
     away: getWinner("qf-4")
+  }
+];
+
+const Final = [
+  {
+    home: getWinner("sf-1"),
+    away: getWinner("sf-2")
   }
 ];
 
