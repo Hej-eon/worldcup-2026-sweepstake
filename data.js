@@ -217,7 +217,7 @@ const semiFinals = [
   }
 ];
 
-const Final = [
+const finalMatch = [
   {
     home: getWinner("sf-1"),
     away: getWinner("sf-2")
