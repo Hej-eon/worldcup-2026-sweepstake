@@ -391,7 +391,24 @@ semiFinals.forEach((match, index) => {
     `;
 });
     
+finalMatch.forEach((match, index) => {
+    const slot = document.getElementById(`sf-${index + 1}`);
+    if (!slot) return;
 
+    slot.innerHTML = `
+        <div class="team">
+            ${match.home ? `<img src="${getFlag(match.home)}"> ${match.home.name}` : "?"}
+        </div>
+        <div class="owner">${match.home ? match.home.owner : ""}</div>
+
+        <div class="team">
+            ${match.away ? `<img src="${getFlag(match.away)}"> ${match.away.name}` : "?"}
+        </div>
+        <div class="owner">${match.away ? match.away.owner : ""}</div>
+    `;
+});
+
+    
 </script>
 
 </body>
