@@ -68,7 +68,7 @@ const eliminatedTeams = [
   "Ivory Coast","Sweden","Panama","Czech Republic","Netherlands","South Africa",
   "Ecuador","Uzbekistan","Turkey","Curacao","Uruguay","DR Congo","Scotland",
   "Germany","Japan","Qatar","Saudi Arabia","Haiti","Austria","Croatia","Algeria",
-  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA", "Egypt", "Colombia", "Morocco", "Belgium", "Norway", "Switzerland", "France", "England"
+  "Australia","Cape Verde","Ghana","Canada","Paraguay","Brazil", "Mexico", "Portugal", "USA", "Egypt", "Colombia", "Morocco", "Belgium", "Norway", "Switzerland", "France", "England", "Argentina"
 ];
 
 const fixtures = [
@@ -112,7 +112,7 @@ const fixtures = [
   
 { id:"FINAL-HEADER", date:"FINAL", home:{name:"",code:"",owner:""}, away:{name:"",code:"",owner:""}, result:"", winner:"" },
   
-{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"Argentina",code:"ar",owner:"Darshan"}, result:"", winner:"" }
+{ id:"final-1", date:"19 Jul 2026 - 8:00 PM", home:{name:"Spain",code:"es",owner:"Betim"}, away:{name:"Argentina",code:"ar",owner:"Darshan"}, result:"1-0", winner:"Spain" }
   
 ];
 
